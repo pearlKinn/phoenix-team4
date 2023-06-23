@@ -1,113 +1,201 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>인덱스 페이지</title>
-  <link rel="stylesheet" as="style" crossorigin
-    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
-  <link rel="stylesheet" href="/style/index.css" />
-</head>
-
-<body>
-  <section class="favorite">
-    <h2 class="favorite__title">실시간 인기 프로그램</h2>
-    <section class="favorite__program">
-      <ol class="program__list">
-        <li class="program__item">
-          <a href="/" class="program__link spriteProgram">
-            <span class="spriteRank a11yHidden">1위</span>
-            재벌집 막내아들
-          </a>
+<lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTT-Taing</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <link rel="stylesheet" href="/style/index.css" />
+  </head>
+  <body>
+    <header class="Header">
+      <nav class="menu">
+        <h1 class="a11yHidden">메인메뉴</h1>
+        <ul class="menu__list">
+          <li class="menu__item1">로고</li>
+          <li class="menu__item2">실시간</li>
+          <li class="menu__item3">TV프로그램</li>
+          <li class="menu__item4">영화</li>
+          <li class="menu__item5">Paramount+</li>
+        </ul>
+        <ul class="menu__list2">
+          <li class="menu__item6">돋보기</li>
+          <li class="menu__item7"><img class="menu__item7__img" src="./../images/tving-icon.png" alt="" /></li>
+        </ul>
+      </nav>
+      <figure class="menu__img">
+        <img class="menu__img__item" src="./../images/main_banner.png" alt="재벌집 막내아들 포스터" />
+      </figure>
+    </header>
+    <section class="content-wrapper">
+      <h2>티빙에서 꼭 봐야하는 콘텐츠</h2>
+      <ul class="content-posters">
+        <li class="content-poster">
+          <div class="spriteMotster"></div>
+          <span class="content-title">괴이</span>
         </li>
-        <li class="program__item">
-          <a href="/" class="program__link spriteProgram">
-            <span class="spriteRank a11yHidden">2위</span>
-            술꾼도시여자들2
-          </a>
+        <li class="content-poster">
+          <div class="spriteLove"></div>
+          <span class="content-title">러브캐치</span>
         </li>
-        <li class="program__item">
-          <a href="/" class="program__link spriteProgram">
-            <span class="spriteRank a11yHidden">3위</span>
-            환혼: 빛과 그림자
-          </a>
+        <li class="content-poster">
+          <div class="spriteTransit"></div>
+          <span class="content-title">환승연애2</span>
         </li>
-        <li class="program__item">
-          <a href="/" class="program__link spriteProgram">
-            <span class="spriteRank a11yHidden">4위</span>
-            캐나다 체크인
-          </a>
+        <li class="content-poster">
+          <div class="spriteDrink"></div>
+          <span class="content-title">술꾼도시여자들</span>
         </li>
-        <li class="program__item">
-          <a href="/" class="program__link spriteProgram">
-            <span class="spriteRank a11yHidden">5위</span>
-            놀라운 토요일
-          </a>
+        <li class="content-poster">
+          <div class="spriteBody"></div>
+          <span class="content-title">몸값</span>
         </li>
-        <li class="program__item">
-          <a href="/" class="program__link spriteProgram">
-            <span class="spriteRank a11yHidden">6위</span>
-            SHOW ME THE MONEY
-          </a>
+        <li class="content-poster">
+          <div class="spriteFood"></div>
+          <span class="content-title">푸드크로니클</span>
         </li>
-        <li class="program__item">
-          <a href="/" class="program__link spriteProgram">
-            <span class="spriteRank a11yHidden">7위</span>
-            러브캐쳐 인 발리
-          </a>
+        <li class="content-poster">
+          <div class="spriteOurEvery"></div>
+          <span class="content-title">전체관람가</span>
         </li>
-        <li class="program__item">
-          <a href="/" class="program__link spriteProgram">
-            <span class="spriteRank a11yHidden">8위</span>
-            알쓸인잡
-          </a>
-        </li>
-      </ol>
+      </ul>
     </section>
-
-    <h2 class="favorite__title">인기 LIVE 채널</h2>
-    <section class="favorite__live">
-      <ol class="live__list">
-        <li class="live__item">
-          <a href="/" class="live__link spriteLive">
-            <span class="spriteRank a11yHidden">1위</span>
-            JTBC
-          </a>
+    <section class="quick-wrapper">
+      <h2>Quick VOD</h2>
+      <ul class="quick-posters">
+        <li class="quick-poster">
+          <div class="spriteHealth"></div>
+          <span>건강면세점</span>
+          <span>130화</span>
         </li>
-        <li class="live__item">
-          <a href="/" class="live__link spriteLive">
-            <span class="spriteRank a11yHidden">2위</span>
-            tvN
-          </a>
+        <li class="quick-poster">
+          <div class="spriteMe"></div>
+          <span>휴먼다큐 &lt;나는 살기로 했다&gt;</span>
+          <span>10화</span>
         </li>
-        <li class="live__item">
-          <a href="/" class="live__link spriteLive">
-            <span class="spriteRank a11yHidden">3위</span>
-            YTN
-          </a>
+        <li class="quick-poster">
+          <div class="spriteLining"></div>
+          <span>알맹이</span>
+          <span>208화</span>
         </li>
-        <li class="live__item">
-          <a href="/" class="live__link spriteLive">
-            <span class="spriteRank a11yHidden">4위</span>
-            JTBC2
-          </a>
+        <li class="quick-poster">
+          <div class="spriteClass"></div>
+          <span>차이나는 클라스</span>
+          <span>254화</span>
         </li>
-        <li class="live__item">
-          <a href="/" class="live__link spriteLive">
-            <span class="spriteRank a11yHidden">5위</span>
-            연합뉴스 TV
-          </a>
+        <li class="quick-poster">
+          <div class="spriteHealth"></div>
+          <span>엄마의 봄날</span>
+          <span>380화</span>
         </li>
-        <li class="live__item">
-          <a href="/" class="live__link spriteLive">
-            <span class="spriteRank a11yHidden">6위</span>
-            애니맥스
-          </a>
+        <li class="quick-poster">
+          <div class="spriteHealth"></div>
+          <span>JTBC 뉴스룸</span>
+          <span>0화</span>
         </li>
-      </ol>
+      </ul>
     </section>
-  </section>
-</body>
-
+    <section class="favorite">
+      <h2 class="favorite__title">실시간 인기 프로그램</h2>
+      <section class="favorite__program">
+        <ol class="program__list">
+          <li class="program__item">
+            <a href="/" class="program__link spriteProgram">
+              <span class="spriteRank a11yHidden">1위</span>
+              재벌집 막내아들
+            </a>
+          </li>
+          <li class="program__item">
+            <a href="/" class="program__link spriteProgram">
+              <span class="spriteRank a11yHidden">2위</span>
+              술꾼도시여자들2
+            </a>
+          </li>
+          <li class="program__item">
+            <a href="/" class="program__link spriteProgram">
+              <span class="spriteRank a11yHidden">3위</span>
+              환혼: 빛과 그림자
+            </a>
+          </li>
+          <li class="program__item">
+            <a href="/" class="program__link spriteProgram">
+              <span class="spriteRank a11yHidden">4위</span>
+              캐나다 체크인
+            </a>
+          </li>
+          <li class="program__item">
+            <a href="/" class="program__link spriteProgram">
+              <span class="spriteRank a11yHidden">5위</span>
+              놀라운 토요일
+            </a>
+          </li>
+          <li class="program__item">
+            <a href="/" class="program__link spriteProgram">
+              <span class="spriteRank a11yHidden">6위</span>
+              SHOW ME THE MONEY
+            </a>
+          </li>
+          <li class="program__item">
+            <a href="/" class="program__link spriteProgram">
+              <span class="spriteRank a11yHidden">7위</span>
+              러브캐쳐 인 발리
+            </a>
+          </li>
+          <li class="program__item">
+            <a href="/" class="program__link spriteProgram">
+              <span class="spriteRank a11yHidden">8위</span>
+              알쓸인잡
+            </a>
+          </li>
+        </ol>
+      </section>
+  
+      <h2 class="favorite__title">인기 LIVE 채널</h2>
+      <section class="favorite__live">
+        <ol class="live__list">
+          <li class="live__item">
+            <a href="/" class="live__link spriteLive">
+              <span class="spriteRank a11yHidden">1위</span>
+              JTBC
+            </a>
+          </li>
+          <li class="live__item">
+            <a href="/" class="live__link spriteLive">
+              <span class="spriteRank a11yHidden">2위</span>
+              tvN
+            </a>
+          </li>
+          <li class="live__item">
+            <a href="/" class="live__link spriteLive">
+              <span class="spriteRank a11yHidden">3위</span>
+              YTN
+            </a>
+          </li>
+          <li class="live__item">
+            <a href="/" class="live__link spriteLive">
+              <span class="spriteRank a11yHidden">4위</span>
+              JTBC2
+            </a>
+          </li>
+          <li class="live__item">
+            <a href="/" class="live__link spriteLive">
+              <span class="spriteRank a11yHidden">5위</span>
+              연합뉴스 TV
+            </a>
+          </li>
+          <li class="live__item">
+            <a href="/" class="live__link spriteLive">
+              <span class="spriteRank a11yHidden">6위</span>
+              애니맥스
+            </a>
+          </li>
+        </ol>
+      </section>
+    </section>
+  </body>
 </html>
