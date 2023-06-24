@@ -40,21 +40,28 @@
       flex: 1 0 calc(20% - 16px);
       min-width: rem(160px);
     }
+
     @include desktop {
       min-width: rem(180px);
     }
   }
 
+  &__infoWrapper {
+    @include flexbox($gap: 5px);
+    min-height: 50px;
+  }
+
   &__info {
     line-height: 60px;
-    @include textOver;
 
+    @include textOver;
     @include desktop {
       font-weight: 600;
     }
   }
 
   &__img {
+    @include fit;
     @include tablet {
       min-width: rem(150px);
     } 
@@ -64,10 +71,6 @@
   }
 }
 
-.infoWrapper {
-  @include flexbox($gap: 10px);
-  min-height: 50px;
-}
 
 .live {
   &__list {
