@@ -470,6 +470,11 @@ legend {
     min-width: 10rem;
   }
 }
+@media (min-width: 768px) {
+  .program__item {
+    min-width: 11.25rem;
+  }
+}
 .program__info {
   line-height: 60px;
   white-space: nowrap;

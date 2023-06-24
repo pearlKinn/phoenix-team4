@@ -40,6 +40,9 @@
       flex: 1 0 calc(20% - 16px);
       min-width: rem(160px);
     }
+    @include desktop {
+      min-width: rem(180px);
+    }
   }
 
   &__info {
@@ -64,7 +67,6 @@
 .infoWrapper {
   @include flexbox($gap: 10px);
   min-height: 50px;
-
 }
 
 .live {
