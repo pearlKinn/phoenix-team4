@@ -1,30 +1,24 @@
 @use "../utils" as *;
 
 .favorite {
-  background: #000;
+  background: $black;
   color: $white;
   width: 100%;
-
+  padding-left: 70px;
   &__title {
     font-size: 28.43px;
     font-weight: 700;
     @include marginY(12px);
-    @include paddingX(70px);
   }
 
   &__program {
     overflow: hidden;
-    padding-left: 70px;
   }
 
   &__live {
   }
 }
-.programWrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
+
 .program {
   &__list {
     @include flexbox($gap: 16px);
@@ -32,46 +26,54 @@
   }
 
   &__item {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "img img img img img"
-    "img img img img img"
-    "img img img img img"
-    "rank info info info info";
-    column-gap: 20px;
-    border: 2px solid salmon;
+    @include flexbox;
+    flex: 1 0 calc(13.5% - 16px);
     max-width: 240px;
+    margin-bottom: 16px;
+
+    @include mobile {
+      flex: 1 0 calc(33.33% - 16px);
+      min-width: rem(150px);
+    }
+
+    @include tablet {
+      flex: 1 0 calc(20% - 16px);
+      min-width: rem(160px);
+    }
   }
-  &__link {
-  }
+
   &__info {
-    grid-area: "info";
-    align-content: center;
+    line-height: 60px;
     @include textOver;
 
     @include desktop {
       font-weight: 600;
-      line-height: 60px;
     }
   }
+
   &__img {
-    grid-area: "img";
+    @include tablet {
+      min-width: rem(150px);
+    } 
+    @include desktop {
+      min-width: rem(160px);
+    }   
   }
 }
-.rank {
-  grid-area: "rank";
-}
-.wrapper {
-  display: flex;
-  gap: 10px;
+
+.infoWrapper {
+  @include flexbox($gap: 10px);
+  min-height: 50px;
+
 }
 
 .live {
   &__list {
   }
+
   &__item {
   }
+
   &__link {
   }
 }
