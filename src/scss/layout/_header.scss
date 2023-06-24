@@ -1,1 +1,48 @@
-// header.scss
+@use "./../utils/" as *;
+@use "./../base/" as *;
+
+
+.Header {
+  background: $black;
+  color: $base-text;
+  @include flexbox($gap:52px ,$items:center);
+  @include desktop{
+  padding: rem(30px) rem(70px);
+  font-size: rem(12px);
+  };
+
+  @include tablet {
+  
+  };
+
+  @include mobile {
+
+  };
+}
+
+.menu {
+  @include flexbox($justify: space-between);
+  flex-grow: 1;
+}
+
+.menu__list {
+  @include flexbox($gap:52px ,$items:center)
+}
+
+.menu__item1 {
+  @include flexbox($justify: center, $items:center)
+}
+
+.menu__item1__text{
+  @include flexbox($justify: center, $items:center)
+
+}
+.menu__item1__icon {
+  padding-right: 10px;
+}
+
+.menu__list2 {
+  @include flexbox($gap:40px);
+
+}
+
