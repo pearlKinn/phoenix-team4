@@ -1,1 +1,146 @@
-// footer.scss
+@use "../utils" as *;
+
+.footer {
+  background: $black;
+  color: $base-text;
+  font-size: clamp(12px, 1.6vw, 20px);
+
+  @include mobile {
+    @include paddingX(16px);
+    @include paddingY(60px);
+  }
+
+  @include tablet {
+    @include paddingX(40px);
+    @include paddingY(100px);
+  }
+
+  @include desktop {
+    @include paddingX(68px);
+    @include paddingY(140px);
+  }
+}
+
+.headContainer {
+  @include flexbox($justify: space-between);
+  border-bottom: 1px solid $gray-800;
+
+  @include mobile {
+    padding-bottom: rem(12px);
+  }
+
+  @include tablet {
+    padding-bottom: rem(16px);
+  }
+
+  @include desktop {
+    padding-bottom: rem(27px);
+  }
+}
+
+.notice {
+  @include flexbox;
+
+  &__title {
+    color: $gray-500;
+    margin-right: rem(20px);
+  }
+}
+
+.shortcut {
+  @include flexbox;
+
+  @include mobile {
+    display: none;
+  }
+
+  &__divider {
+    color: $gray-500;
+    border-left: 1px solid $gray-500;
+    margin-left: rem(16px);
+    padding-left: rem(16px);
+
+    @include desktop {
+      margin-left: rem(30px);
+      padding-left: rem(30px);
+    }
+  }
+}
+
+.menu {
+  @include flexbox($gap: 20px);
+
+  @include desktop {
+    @include flexbox($gap: 36px);
+  }
+
+  @include mobile {
+    @include flexbox(column);
+    line-height: 1.6;
+    margin-top: rem(12px);
+  }
+
+  @include tablet {
+    margin-top: rem(16px);
+  }
+
+  @include desktop {
+    margin-top: rem(27px);
+  }
+}
+
+.address {
+  margin-top: rem(12px);
+  color: $gray-500;
+  line-height: 1.6;
+
+  @include mobile {
+    display: none;
+  }
+
+  @include desktop {
+    margin-top: rem(24px);
+  }
+
+  &__link {
+    text-decoration: underline 1px;
+  }
+
+  .divider {
+    color: $gray-800;
+  }
+}
+
+.snsList {
+  @include flexbox($gap: 20px);
+  @include marginY(12px);
+
+  @include desktop {
+    @include marginY(24px);
+  }
+
+  &__link {
+    display: block;
+
+    @include mobile {
+      width: rem(24px);
+    }
+
+    @include tablet {
+      width: rem(30px);
+    }
+
+    @include desktop {
+      width: rem(52px);
+    }
+  }
+
+  .snsIcon {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.copy {
+  color: $gray-500;
+}
