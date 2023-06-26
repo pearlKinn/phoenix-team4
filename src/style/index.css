@@ -365,8 +365,11 @@ legend {
   margin: -1px;
 }
 
+html {
+  font-size: calc(8px + 0.5vw);
+}
+
 .Header {
-  background: #000000;
   color: #c4c4c4;
   display: flex;
   flex-flow: row nowrap;
@@ -376,10 +379,12 @@ legend {
 }
 @media (min-width: 768px) {
   .Header {
+    background: #000000;
     padding: 1.875rem 4.375rem;
     font-size: 0.75rem;
   }
 }
+
 .menu {
   display: flex;
   flex-flow: row nowrap;
@@ -425,17 +430,329 @@ legend {
   gap: 2.5rem;
 }
 
+@media (min-width: 481px) and (max-width: 767px) {
+  .Header {
+    padding: 1rem 2.5rem;
+    gap: 1.75rem;
+    font-size: 0.75rem;
+    position: absolute;
+  }
+}
+@media (max-width: 480px) {
+  .Header {
+    position: absolute;
+  }
+  .menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-grow;
+    align-items: stretch;
+    gap: 0rem;
+  }
+  .menu__list {
+    display: none;
+  }
+}
+.event {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0rem;
+  background: #000000;
+  padding-left: 70px;
+}
+.event__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.event__list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+body {
+  background-color: black;
+}
+
+@media (min-width: 768px) {
+  .content__wrapper {
+    margin-left: 4.375rem;
+  }
+  .content__wrapper h2 {
+    font-size: 1.776875rem;
+    font-family: Pretendard;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+  }
+  .content__posters {
+    min-width: 120rem;
+    display: flex;
+  }
+  .content__link {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+  }
+  .content__poster img {
+    width: 100%;
+    height: auto;
+  }
+  .content__title {
+    color: #c4c4c4;
+    font-size: 1.333rem;
+    font-family: Pretendard;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+  .quick__wrapper {
+    margin-left: 4.375rem;
+  }
+  .quick__wrapper h2 {
+    font-size: 1.776875rem;
+    font-family: Pretendard;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 2.25rem;
+    margin-bottom: 0.75rem;
+  }
+  .quick__posters {
+    display: flex;
+    min-width: 120rem;
+  }
+  .quick__link {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    position: relative;
+  }
+  .quick__red {
+    position: absolute;
+    top: 0.3125rem;
+    left: 0.3125rem;
+    background-color: #c73e4e;
+    width: 6rem;
+    height: 1.875rem;
+    border-radius: 0.25rem;
+    color: #e1e1e1;
+    font-size: 1rem;
+    font-family: Pretendard;
+    padding: 0.375rem 0.5625rem;
+  }
+  .quick__poster img {
+    width: 100%;
+    height: auto;
+  }
+  .quick__title {
+    font-size: 1.333rem;
+    font-family: Pretendard;
+    font-weight: 600;
+    color: #c4c4c4;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+    overflow: hidden;
+  }
+  .quick__episode {
+    font-size: 1rem;
+    font-family: Pretendard;
+    color: #a6a6a6;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .content__wrapper {
+    margin-left: 2.5rem;
+  }
+  .content__wrapper h2 {
+    font-size: 16px;
+    font-family: Pretendard;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  .content__posters {
+    display: flex;
+    min-width: 48rem;
+  }
+  .content__link {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+  }
+  .content__poster img {
+    width: 100%;
+    height: auto;
+  }
+  .content__title {
+    color: #c4c4c4;
+    font-size: 0.7501875rem;
+    font-family: Pretendard;
+  }
+  .quick__wrapper {
+    margin-left: 2.5rem;
+  }
+  .quick__wrapper h2 {
+    font-size: 1rem;
+    font-family: Pretendard;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .quick__posters {
+    display: flex;
+    min-width: 48rem;
+  }
+  .quick__link {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+    position: relative;
+  }
+  .quick__red {
+    position: absolute;
+    top: 0.125rem;
+    left: 0.125rem;
+    background-color: #c73e4e;
+    width: 3.8125rem;
+    height: 1rem;
+    border-radius: 0.25rem;
+    color: #e1e1e1;
+    font-size: 0.5625rem;
+    font-family: Pretendard;
+    padding: 0.0625rem 0.375rem;
+  }
+  .quick__poster img {
+    width: 100%;
+    height: auto;
+  }
+  .quick__title {
+    font-size: 0.7501875rem;
+    font-family: Pretendard;
+    font-weight: 600;
+    color: #c4c4c4;
+  }
+  .quick__episode {
+    font-size: 0.7501875rem;
+    font-family: Pretendard;
+    color: #a6a6a6;
+  }
+}
+@media (max-width: 480px) {
+  .content__wrapper {
+    margin-left: 0.5rem;
+  }
+  .content__wrapper h2 {
+    font-size: 0.7501875rem;
+    font-family: Pretendard;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.25rem;
+  }
+  .content__posters {
+    display: flex;
+    min-width: 30rem;
+  }
+  .content__link {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.444375rem;
+  }
+  .content__poster img {
+    width: 5.805875rem;
+    height: 8.375rem;
+  }
+  .content__title {
+    display: none;
+  }
+  .quick__wrapper {
+    margin-left: 0.5rem;
+  }
+  .quick__wrapper h2 {
+    font-size: 0.7501875rem;
+    font-family: Pretendard;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 0.9375rem;
+    margin-bottom: 0.25rem;
+  }
+  .quick__posters {
+    display: flex;
+    min-width: 30rem;
+  }
+  .quick__link {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+    position: relative;
+  }
+  .quick__red {
+    position: absolute;
+    top: 0.0625rem;
+    left: 0.0625rem;
+    background-color: #c73e4e;
+    width: 3.8125rem;
+    height: 1rem;
+    border-radius: 0.25rem;
+    color: #e1e1e1;
+    font-size: 0.375rem;
+    font-family: Pretendard;
+    padding: 0.0625rem 0.375rem;
+  }
+  .quick__poster img {
+    width: 100%;
+    height: auto;
+  }
+  .quick__title {
+    font-size: 0.7501875rem;
+    font-family: Pretendard;
+    font-weight: 600;
+    color: #c4c4c4;
+  }
+  .quick__episode {
+    font-size: 0.7501875rem;
+    font-family: Pretendard;
+    color: #a6a6a6;
+  }
+}
 .favorite {
   background: #000000;
   color: #ffffff;
   width: 100%;
   padding-left: 4.375rem;
 }
+@media (max-width: 480px) {
+  .favorite {
+    padding-left: 0.5rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .favorite {
+    padding-left: 2.5rem;
+  }
+}
 .favorite__title {
   font-size: 28.43px;
   font-weight: 700;
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+@media (max-width: 480px) {
+  .favorite__title {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .favorite__title {
+    font-size: 1rem;
+  }
 }
 .favorite__program {
   overflow: hidden;
@@ -489,6 +806,16 @@ legend {
   gap: 0.3125rem;
   min-height: 3.125rem;
 }
+@media (max-width: 480px) {
+  .program__rank {
+    max-width: 1.8125rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .program__rank {
+    max-width: 1.8125rem;
+  }
+}
 .program__info {
   position: relative;
   bottom: -1.25rem;
@@ -497,6 +824,16 @@ legend {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media (max-width: 480px) {
+  .program__info {
+    bottom: -0.3125rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .program__info {
+    bottom: -0.625rem;
+  }
 }
 @media (min-width: 768px) {
   .program__info {
@@ -527,6 +864,7 @@ legend {
   align-items: stretch;
   gap: 1rem;
   height: 100%;
+  padding-bottom: 1rem;
 }
 .live__item {
   display: flex;
@@ -556,12 +894,29 @@ legend {
   }
 }
 .live__infoWrapper {
+  position: relative;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
   gap: 0.75rem;
   min-height: 50px;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .live__infoWrapper {
+    bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .live__rank {
+    max-width: 1.875rem;
+    align-self: flex-start;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .live__rank {
+    max-width: 1.875rem;
+  }
 }
 .live__infoContainer {
   display: flex;
@@ -570,6 +925,12 @@ legend {
   align-items: stretch;
   gap: 0.125rem;
   overflow: hidden;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .live__infoContainer {
+    position: relative;
+    top: 10px;
+  }
 }
 .live__title {
   color: #c4c4c4;
