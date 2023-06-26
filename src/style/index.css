@@ -920,11 +920,32 @@ body {
   width: 100%;
   padding-left: 4.375rem;
 }
+@media (max-width: 480px) {
+  .favorite {
+    padding-left: 0.5rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .favorite {
+    padding-left: 2.5rem;
+  }
+}
 .favorite__title {
   font-size: 28.43px;
   font-weight: 700;
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+@media (max-width: 480px) {
+  .favorite__title {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .favorite__title {
+    font-size: 1rem;
+  }
 }
 .favorite__program {
   overflow: hidden;
@@ -978,6 +999,16 @@ body {
   gap: 0.3125rem;
   min-height: 3.125rem;
 }
+@media (max-width: 480px) {
+  .program__rank {
+    max-width: 1.8125rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .program__rank {
+    max-width: 1.8125rem;
+  }
+}
 .program__info {
   position: relative;
   bottom: -1.25rem;
@@ -986,6 +1017,16 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media (max-width: 480px) {
+  .program__info {
+    bottom: -0.3125rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .program__info {
+    bottom: -0.625rem;
+  }
 }
 @media (min-width: 768px) {
   .program__info {
@@ -1017,6 +1058,11 @@ body {
   gap: 1rem;
   height: 100%;
 }
+@media (min-width: 768px) {
+  .live__list {
+    padding-bottom: 2.25rem;
+  }
+}
 .live__item {
   display: flex;
   flex-flow: row nowrap;
@@ -1045,12 +1091,29 @@ body {
   }
 }
 .live__infoWrapper {
+  position: relative;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
   gap: 0.75rem;
   min-height: 50px;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .live__infoWrapper {
+    bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .live__rank {
+    max-width: 1.875rem;
+    align-self: flex-start;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .live__rank {
+    max-width: 1.875rem;
+  }
 }
 .live__infoContainer {
   display: flex;
@@ -1059,6 +1122,12 @@ body {
   align-items: stretch;
   gap: 0.125rem;
   overflow: hidden;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .live__infoContainer {
+    position: relative;
+    top: 10px;
+  }
 }
 .live__title {
   color: #c4c4c4;
