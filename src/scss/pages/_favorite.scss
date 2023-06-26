@@ -4,7 +4,7 @@
   background: $black;
   color: $white;
   width: 100%;
-  padding-left: 70px;
+  padding-left: rem(70px);
   &__title {
     font-size: 28.43px;
     font-weight: 700;
@@ -16,6 +16,7 @@
   }
 
   &__live {
+    overflow: hidden;
   }
 }
 
@@ -32,12 +33,12 @@
     margin-bottom: 16px;
 
     @include mobile {
-      flex: 1 0 calc(33.33% - 16px);
+      flex: 1 0 calc(31.25% - 16px);
       min-width: rem(150px);
     }
 
     @include tablet {
-      flex: 1 0 calc(20% - 16px);
+      flex: 1 0 calc(19.6% - 16px);
       min-width: rem(160px);
     }
 
@@ -47,38 +48,91 @@
   }
 
   &__infoWrapper {
+    position: relative;
+    top: rem(-22px);
     @include flexbox($gap: 5px);
-    min-height: 50px;
+    min-height: rem(50px);
   }
 
   &__info {
-    line-height: 60px;
-
+    position: relative;
+    bottom: rem(-20px);
+    line-height: rem(60px);
+    color: $gray-200;
     @include textOver;
+
     @include desktop {
+      font-size: rem(20px);
       font-weight: 600;
     }
   }
 
   &__img {
+    border-radius: rem(4px);
     @include fit;
     @include tablet {
       min-width: rem(150px);
-    } 
+    }
     @include desktop {
       min-width: rem(160px);
-    }   
+    }
   }
 }
-
-
+// 라이브 섹션
 .live {
   &__list {
+    @include flexbox($gap: 16px);
+    height: 100%;
   }
 
   &__item {
+    @include flexbox($gap: 12px); 
+    flex: 1 0 calc(21% - 16px);
+    max-width: 345px;
+    margin-bottom: rem(16px);
+
+    @include mobile {
+      flex: 1 0 calc(50.33% - 16px);
+      min-width: rem(140px);
+    }
+
+    @include tablet {
+      flex: 1 0 calc(32.2% - 16px);
+      min-width: rem(150px);
+    }
+
+    @include desktop {
+      min-width: rem(170px);
+    }
   }
 
-  &__link {
+  &__infoWrapper {
+    @include flexbox($gap: 12px);
+    min-height: 50px;
+  }
+  &__infoContainer {
+    @include flexbox($direction: column, $gap: 2px);
+    overflow: hidden;
+  }
+  &__title {
+    color: $gray-200;
+    font-weight: 600;
+    font-size: rem(20px);
+  }
+  &__info {
+    color: $gray-300;
+    @include textOver;
+
+    @include desktop {
+      font-weight: 600;
+    }
+  }
+  &__viewing--rate {
+    color: $gray-500;
+  }
+
+  &__img {
+    border-radius: rem(4px);
+    margin-bottom: rem(12px);
   }
 }
