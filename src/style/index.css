@@ -365,8 +365,11 @@ legend {
   margin: -1px;
 }
 
+html {
+  font-size: calc(8px + 0.5vw);
+}
+
 .Header {
-  background: #000000;
   color: #c4c4c4;
   display: flex;
   flex-flow: row nowrap;
@@ -376,10 +379,12 @@ legend {
 }
 @media (min-width: 768px) {
   .Header {
+    background: #000000;
     padding: 1.875rem 4.375rem;
     font-size: 0.75rem;
   }
 }
+
 .menu {
   display: flex;
   flex-flow: row nowrap;
@@ -423,6 +428,53 @@ legend {
   justify-content: flex-start;
   align-items: stretch;
   gap: 2.5rem;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .Header {
+    padding: 1rem 2.5rem;
+    gap: 1.75rem;
+    font-size: 0.75rem;
+    position: absolute;
+  }
+}
+@media (max-width: 480px) {
+  .Header {
+    position: absolute;
+  }
+  .menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-grow;
+    align-items: stretch;
+    gap: 0rem;
+  }
+  .menu__list {
+    display: none;
+  }
+}
+.event {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0rem;
+  background: #000000;
+  padding-left: 70px;
+}
+.event__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.event__list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */
