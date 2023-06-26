@@ -1,0 +1,33 @@
+@use "./../utils/" as *;
+@use "./../base/" as *;
+
+
+.event {
+  @include flexbox($direction: column);
+  background:$black;
+  padding-left: 70px;
+  @include desktop {
+
+  }
+
+  @include tablet {
+
+  }
+
+  @include mobile {
+    
+  }
+}
+
+.event__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%;
+  color: $white;
+}
+
+
+.event__list {
+  @include flexbox($gap:16px);
+}
+
