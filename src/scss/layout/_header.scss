@@ -1,23 +1,18 @@
 @use "./../utils/" as *;
-@use "./../base/" as *;
 
+// 데스크탑 헤더
+html {
+  font-size: calc(8px + 0.5vw);
+}
 
 .Header {
-  background: $black;
   color: $base-text;
-  @include flexbox($gap:52px ,$items:center);
-  @include desktop{
-  padding: rem(30px) rem(70px);
-  font-size: rem(12px);
-  };
-
-  @include tablet {
-  
-  };
-
-  @include mobile {
-
-  };
+  @include flexbox($gap: 52px, $items: center);
+  @include desktop {
+    background: $black;
+    padding: rem(30px) rem(70px);
+    font-size: rem(12px);
+  }
 }
 
 .menu {
@@ -26,23 +21,44 @@
 }
 
 .menu__list {
-  @include flexbox($gap:52px ,$items:center)
+  @include flexbox($gap: 52px, $items: center);
 }
 
 .menu__item1 {
-  @include flexbox($justify: center, $items:center)
+  @include flexbox($justify: center, $items: center);
 }
 
-.menu__item1__text{
-  @include flexbox($justify: center, $items:center)
-
+.menu__item1__text {
+  @include flexbox($justify: center, $items: center);
 }
 .menu__item1__icon {
   padding-right: 10px;
 }
 
 .menu__list2 {
-  @include flexbox($gap:40px);
-
+  @include flexbox($gap: 40px);
 }
 
+//  테블릿 헤더
+
+@include tablet {
+  .Header {
+    padding: rem(16px) rem(40px);
+    gap: rem(28px);
+    font-size: rem(12px);
+    position: absolute;
+  }
+}
+
+@include mobile {
+  .Header {
+    position: absolute;
+  }
+
+  .menu {
+    @include flexbox($justify: flex-grow);
+  }
+  .menu__list {
+    display: none;
+  }
+}
