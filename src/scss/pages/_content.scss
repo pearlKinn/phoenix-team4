@@ -34,7 +34,7 @@ body {
       font-size: rem(21.328px);
       font-family: Pretendard;
       font-weight: 600;
-      margin-top: 8px;
+      margin-top: rem(8px);
     }
   }
   .quick {
@@ -196,7 +196,7 @@ body {
       display: flex;
       min-width: rem(480px);
     }
-    &.snsList__link {
+    &__link {
       display: flex;
       flex-direction: column;
       margin-right: rem(7.11px);
@@ -226,10 +226,10 @@ body {
       display: flex;
       min-width: rem(480px);
     }
-    &__poster {
+    &__link {
       display: flex;
       flex-direction: column;
-      margin-right: rem(9px);
+      margin-right: rem(8px);
       position: relative;
     }
     &__red {
