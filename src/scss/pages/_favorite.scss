@@ -86,7 +86,7 @@
   }
 
   &__item {
-    @include flexbox($gap: 12px); 
+    @include flexbox($gap: 12px);
     flex: 1 0 calc(21% - 16px);
     max-width: 345px;
     margin-bottom: rem(16px);
@@ -116,19 +116,35 @@
   }
   &__title {
     color: $gray-200;
-    font-weight: 600;
-    font-size: rem(20px);
+    font-size: rem(12px);
+
+    @include desktop {
+      font-weight: 600;
+      font-size: rem(20px);
+    }
   }
   &__info {
     color: $gray-300;
     @include textOver;
 
+    @include mobile {
+      font-size: rem(12px);
+    }
+    @include tablet {
+      font-size: rem(12px);
+    }
     @include desktop {
       font-weight: 600;
     }
   }
   &__viewing--rate {
     color: $gray-500;
+    @include mobile {
+      font-size: rem(12px);
+    }
+    @include tablet {
+      font-size: rem(12px);
+    }
   }
 
   &__img {

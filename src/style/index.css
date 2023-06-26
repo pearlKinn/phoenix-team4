@@ -573,14 +573,29 @@ legend {
 }
 .live__title {
   color: #c4c4c4;
-  font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 0.75rem;
+}
+@media (min-width: 768px) {
+  .live__title {
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
 }
 .live__info {
   color: #a6a6a6;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media (max-width: 480px) {
+  .live__info {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .live__info {
+    font-size: 0.75rem;
+  }
 }
 @media (min-width: 768px) {
   .live__info {
@@ -589,6 +604,16 @@ legend {
 }
 .live__viewing--rate {
   color: #6b6b6b;
+}
+@media (max-width: 480px) {
+  .live__viewing--rate {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .live__viewing--rate {
+    font-size: 0.75rem;
+  }
 }
 .live__img {
   border-radius: 0.25rem;
