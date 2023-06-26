@@ -1,0 +1,264 @@
+@use './../utils' as *;
+
+body {
+  background-color: black;
+}
+
+@include desktop {
+  .content {
+    &__wrapper {
+      margin-left: rem(70px);
+    }
+    &__wrapper h2 {
+      font-size: rem(28.43px);
+      font-family: Pretendard;
+      font-weight: 700;
+      color: $white;
+      margin-bottom: rem(12px);
+    }
+    &__posters {
+      min-width: rem(1920px);
+      display: flex;
+    }
+    &__link {
+      display: flex;
+      flex-direction: column;
+      margin-right: rem(16px);
+    }
+    &__poster img {
+      width: 100%;
+      height: auto;
+    }
+    &__title {
+      color: $gray-200;
+      font-size: rem(21.328px);
+      font-family: Pretendard;
+      font-weight: 600;
+      margin-top: rem(8px);
+    }
+  }
+  .quick {
+    &__wrapper {
+      margin-left: rem(70px);
+    }
+    &__wrapper h2 {
+      font-size: rem(28.43px);
+      font-family: Pretendard;
+      font-weight: 700;
+      color: $white;
+
+      margin-top: rem(36px);
+      margin-bottom: rem(12px);
+    }
+    &__posters {
+      display: flex;
+      min-width: rem(1920px);
+    }
+
+    &__link {
+      display: flex;
+      flex-direction: column;
+      margin-right: rem(16px);
+      position: relative;
+    }
+    &__red {
+      position: absolute;
+      top: rem(5px);
+      left: rem(5px);
+      background-color: #c73e4e;
+      width: rem(96px);
+      height: rem(30px);
+      border-radius: rem(4px);
+      color: $gray-100;
+      font-size: rem(16px);
+      font-family: Pretendard;
+      padding: rem(6px) rem(9px);
+    }
+    &__poster img {
+      width: 100%;
+      height: auto;
+    }
+    &__title {
+      font-size: rem(21.328px);
+      font-family: Pretendard;
+      font-weight: 600;
+      color: $gray-200;
+      margin-top: rem(8px);
+      margin-bottom: rem(4px);
+      overflow: hidden;
+    }
+    &__episode {
+      font-size: rem(16px);
+      font-family: Pretendard;
+      color: $gray-300;
+    }
+  }
+}
+
+@include tablet {
+  .content {
+    &__wrapper {
+      margin-left: rem(40px);
+    }
+    &__wrapper h2 {
+      font-size: 16px;
+      font-family: Pretendard;
+      font-weight: 700;
+      color: $white;
+      margin-bottom: rem(8px);
+    }
+    &__posters {
+      display: flex;
+      min-width: rem(768px);
+    }
+    &__link {
+      display: flex;
+      flex-direction: column;
+      margin-right: rem(8px);
+    }
+    &__poster img {
+      width: 100%;
+      height: auto;
+    }
+    &__title {
+      color: $gray-200;
+      font-size: rem(12.003px);
+      font-family: Pretendard;
+    }
+  }
+  .quick {
+    &__wrapper {
+      margin-left: rem(40px);
+    }
+    &__wrapper h2 {
+      font-size: rem(16px);
+      font-family: Pretendard;
+      font-weight: 700;
+      color: $white;
+
+      margin-top: rem(28px);
+      margin-bottom: rem(8px);
+    }
+    &__posters {
+      display: flex;
+      min-width: rem(768px);
+    }
+    &__link {
+      display: flex;
+      flex-direction: column;
+      margin-right: rem(8px);
+      position: relative;
+    }
+    &__red {
+      position: absolute;
+      top: rem(2px);
+      left: rem(2px);
+      background-color: #c73e4e;
+      width: rem(61px);
+      height: rem(16px);
+      border-radius: rem(4px);
+      color: $gray-100;
+      font-size: rem(9px);
+      font-family: Pretendard;
+      padding: rem(1px) rem(6px);
+    }
+    &__poster img {
+      width: 100%;
+      height: auto;
+    }
+    &__title {
+      font-size: rem(12.003px);
+      font-family: Pretendard;
+      font-weight: 600;
+      color: $gray-200;
+    }
+    &__episode {
+      font-size: rem(12.003px);
+      font-family: Pretendard;
+      color: $gray-300;
+    }
+  }
+}
+
+@include mobile {
+  .content {
+    &__wrapper {
+      margin-left: rem(8px);
+    }
+    &__wrapper h2 {
+      font-size: rem(12.003px);
+      font-family: Pretendard;
+      font-weight: 600;
+      color: $white;
+      margin-bottom: rem(4px);
+    }
+    &__posters {
+      display: flex;
+      min-width: rem(480px);
+    }
+    &__link {
+      display: flex;
+      flex-direction: column;
+      margin-right: rem(7.11px);
+    }
+    &__poster img {
+      width: rem(92.894px);
+      height: rem(134px);
+    }
+    &__title {
+      display: none;
+    }
+  }
+  .quick {
+    &__wrapper {
+      margin-left: rem(8px);
+    }
+    &__wrapper h2 {
+      font-size: rem(12.003px);
+      font-family: Pretendard;
+      font-weight: 600;
+      color: $white;
+
+      margin-top: rem(15px);
+      margin-bottom: rem(4px);
+    }
+    &__posters {
+      display: flex;
+      min-width: rem(480px);
+    }
+    &__link {
+      display: flex;
+      flex-direction: column;
+      margin-right: rem(8px);
+      position: relative;
+    }
+    &__red {
+      position: absolute;
+      top: rem(1px);
+      left: rem(1px);
+      background-color: #c73e4e;
+      width: rem(61px);
+      height: rem(16px);
+      border-radius: rem(4px);
+      color: $gray-100;
+      font-size: rem(6px);
+      font-family: Pretendard;
+      padding: rem(1px) rem(6px);
+    }
+    &__poster img {
+      width: 100%;
+      height: auto;
+    }
+    &__title {
+      font-size: rem(12.003px);
+      font-family: Pretendard;
+      font-weight: 600;
+      color: $gray-200;
+    }
+    &__episode {
+      font-size: rem(12.003px);
+      font-family: Pretendard;
+      color: $gray-300;
+    }
+  }
+}
