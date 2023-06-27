@@ -618,6 +618,11 @@ legend {
     display: none;
   }
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  .shortcut {
+    display: none;
+  }
+}
 .shortcut__divider {
   color: #6b6b6b;
   border-left: 1px solid #6b6b6b;
@@ -631,16 +636,17 @@ legend {
   }
 }
 
-.menu {
+.footer__menu {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 1.25rem;
+  gap: 0rem;
+  gap: 1vw;
   border-top: 1px solid #2b2b2b;
 }
 @media (max-width: 480px) {
-  .menu {
+  .footer__menu {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -652,13 +658,13 @@ legend {
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  .menu {
+  .footer__menu {
     margin-top: 1rem;
     padding-top: 1rem;
   }
 }
 @media (min-width: 768px) {
-  .menu {
+  .footer__menu {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -791,12 +797,12 @@ body {
   }
   .content__posters {
     display: flex;
+    max-width: 120rem;
     gap: 1rem;
   }
   .content__link {
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: auto;
     width: clamp(140px, 21vw, 280px);
   }
@@ -1735,7 +1741,7 @@ body {
 }
 .find__id__user__email {
   background: #212121;
-  color: #565656;
+  color: #ffffff;
   font-family: Pretendard;
   border: none;
   border-radius: 0.25rem;
@@ -1908,6 +1914,11 @@ body {
   }
 }
 .find__identity__btn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
   background: #e1e1e1;
   font-family: Pretendard;
   font-weight: 600;

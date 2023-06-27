@@ -18,12 +18,12 @@ body {
     }
     &__posters {
       display: flex;
+      max-width: rem(1920px);
       gap: rem(16px);
     }
     &__link {
       display: flex;
       flex-direction: column;
-      width: 100%;
       height: auto;
       width: clamp(140px, 21vw, 280px);
     }
