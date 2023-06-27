@@ -378,7 +378,7 @@ legend {
 @media (min-width: 768px) {
   .Header {
     padding: 1.875rem 4.375rem;
-    font-size: 1rem;
+    font-size: 1.3125rem;
     gap: 3.25rem;
   }
 }
@@ -386,7 +386,7 @@ legend {
   .Header {
     padding: 1rem 2.5rem;
     gap: 1rem;
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     position: absolute;
     width: 100%;
     top: 0;
@@ -737,11 +737,31 @@ legend {
   background: #000000;
   padding-left: 70px;
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  .event {
+    padding-left: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .event {
+    padding-left: 8px;
+  }
+}
 .event__title {
   font-size: 28px;
   font-weight: 700;
   line-height: 140%;
   color: #ffffff;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .event__title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .event__title {
+    font-size: 12px;
+  }
 }
 .event__list {
   display: flex;
