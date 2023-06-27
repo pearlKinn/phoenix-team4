@@ -5,11 +5,27 @@
   background:$black;
   padding-left: 70px;
 
+  @include tablet {
+  padding-left: 40px;
+  }
+
+  @include mobile {
+  padding-left: 8px;
+  }
+
   &__title {
   font-size: 28px;
   font-weight: 700;
   line-height: 140%;
   color: $white;
+
+  @include tablet {
+  font-size: 16px;
+  }
+
+  @include mobile {
+  font-size: 12px;
+  }
   }
 
   &__list {
