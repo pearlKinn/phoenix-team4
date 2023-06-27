@@ -2,13 +2,6 @@
 @use "../layout/header";
 @use "../layout/footer";
 
-// 헤더 부분
-.header {
-  @include paddingX(70px);
-  height: 100px;
-  margin-top: 19px;
-}
-
 // 로그인 영역
 .login {
   @include flexbox(column);

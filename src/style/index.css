@@ -1368,13 +1368,6 @@ body {
   }
 }
 
-.header {
-  padding-left: 4.375rem;
-  padding-right: 4.375rem;
-  height: 100px;
-  margin-top: 19px;
-}
-
 .login {
   display: flex;
   flex-flow: column nowrap;
