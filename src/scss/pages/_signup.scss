@@ -1,7 +1,7 @@
-@use "./base";
-@use "./layout/header";
-@use "./layout/footer";
-@use "./utils" as *;
+@use "../base";
+@use "../layout/header";
+@use "../layout/footer";
+@use "../utils" as *;
 
 .bgColor {
   background: #000;
