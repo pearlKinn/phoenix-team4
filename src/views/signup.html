@@ -11,91 +11,87 @@
 </head>
 
 <body>
-  <header class="header">
-    <h1 class="menu__logo">
-      <img src="../images/tving-logo-icon.png" alt="티빙" />
+  <header class="Header">
+    <h1 class="header__logo"><a href="/" class="header__name"><img src="../images/tving-logo-icon.png" alt="" /></a>
     </h1>
   </header>
 
-  <div class="bgColor">
-    <main class="signup">
-      <h2 class="signup__title">티빙 회원가입</h2>
-      <p class="signup__desc">아이디와 이메일로 간편하게 티빙을 시작하세요!</p>
-      <form action="URL" class="signup__Form" method="post">
-        <fieldset>
-          <legend>회원가입 폼</legend>
-          <div class="signup__container">
-            <div>
-              <label for="userID" class="a11yHidden">아이디</label>
-              <input type="text" class="signup__input" id="userID" name="userID" placeholder="아이디" required
-                aria-invalid="false" aria-describedby="userIDError" aria-live="assertive" />
-              <div class="errorMessage" id="userIDError">영문 또는 영문, 숫자 조합 6~12자리</div>
-            </div>
-            <div>
-              <label for="userPwd" class="a11yHidden">비밀번호</label>
-              <input type="password" class="signup__input" id="userPwd" name="userPwd" placeholder="비밀번호" required
-                aria-invalid="false" aria-describedby="userPwdError" aria-live="assertive" />
-              <div class="errorMessage" id="userPwdError">영문, 숫자, 특수문자(~!@#$%^&*) 조합 8~15자리</div>
-            </div>
-            <div>
-              <label for="userPwdConfirm" class="a11yHidden">비밀번호 확인</label>
-              <input type="password" class="signup__input" id="userPwdConfirm" name="userPwdConfirm"
-                placeholder="비밀번호 확인" required aria-invalid="false" aria-describedby="userPwdConfirmError"
-                aria-live="assertive" />
-              <div class="errorMessage" id="userPwdConfirmError">비밀번호가 일치하지 않습니다.</div>
-            </div>
-            <div>
-              <label for="userEmail" class="a11yHidden">이메일</label>
-              <input type="email" class="signup__input" id="userEmail" name="userEmail" placeholder="이메일" required
-                aria-invalid="false" aria-describedby="userEmailError" aria-live="assertive" />
-              <div class="errorMessage" id="userEmailError">이메일 형식으로 입력해주세요.</div>
-            </div>
-            <div class="checkAllContainer">
-              <input type="checkbox" id="allAgree" name="agreeCheck" class="checkAll" />
-              <label for="allAgree" class="allAgree">모두 동의합니다.</label>
-            </div>
-            <ul class="agreeList" aria-label="회원가입 동의 리스트">
-              <li class="checkList">
-                <input type="checkbox" id="fourteenMore" name="agreeCheck" class="check" required />
-                <label for="fourteenMore" class="agree">만 14세 이상입니다.</label>
-              </li>
-              <li class="checkList">
-                <input type="checkbox" id="service" name="agreeCheck" class="check" required />
-                <label for="service" class="agree">[필수] 서비스 이용약관 동의</label>
-              </li>
-              <li class="checkList">
-                <input type="checkbox" id="private" name="agreeCheck" class="check" required />
-                <label for="private" class="agree">[필수] 개인정보 수집 및 서비스 활용 동의</label>
-              </li>
-              <li class="checkList">
-                <input type="checkbox" id="channel" name="agreeCheck" class="check" required />
-                <label for="channel" class="agree">[필수] 채널 홈페이지 개인정보 제 3자 제공동의</label>
-              </li>
-              <li class="checkList">
-                <input type="checkbox" id="third" name="agreeCheck" class="check" />
-                <label for="third" class="agree">[선택] 개인정보 제 3자 제공동의</label>
-              </li>
-              <li class="checkList">
-                <input type="checkbox" id="collect" name="agreeCheck" class="check" />
-                <label for="collect" class="agree">[선택] 개인정보 수집 및 서비스 활용 동의</label>
-                <ul class="marketingList" aria-label="마케팅 정보 수신동의 리스트">
-                  <li class="checkList">
-                    <input type="checkbox" id="sms" name="agreeCheck" class="check" />
-                    <label for="sms" class="agree">[선택] 마케팅 정보 SMS 수신동의</label>
-                  </li>
-                  <li class="checkList">
-                    <input type="checkbox" id="email" name="agreeCheck" class="check" />
-                    <label for="email" class="agree">[선택] 마케팅 정보 이메일 수신동의</label>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <button type="submit" class="signupBtn">가입하기</button>
+  <main class="signup">
+    <h2 class="signup__title">티빙 회원가입</h2>
+    <p class="signup__desc">아이디와 이메일로 간편하게 티빙을 시작하세요!</p>
+    <form action="URL" class="signup__Form" method="post">
+      <fieldset>
+        <legend>회원가입 폼</legend>
+        <div class="signup__container">
+          <div>
+            <label for="userID" class="a11yHidden">아이디</label>
+            <input type="text" class="signup__input" id="userID" name="userID" placeholder="아이디" required
+              aria-invalid="false" aria-describedby="userIDError" aria-live="assertive" />
+            <div class="errorMessage" id="userIDError">영문 또는 영문, 숫자 조합 6~12자리</div>
           </div>
-        </fieldset>
-      </form>
-    </main>
-  </div>
+          <div>
+            <label for="userPwd" class="a11yHidden">비밀번호</label>
+            <input type="password" class="signup__input" id="userPwd" name="userPwd" placeholder="비밀번호" required
+              aria-invalid="false" aria-describedby="userPwdError" aria-live="assertive" />
+            <div class="errorMessage" id="userPwdError">영문, 숫자, 특수문자(~!@#$%^&*) 조합 8~15자리</div>
+          </div>
+          <div>
+            <label for="userPwdConfirm" class="a11yHidden">비밀번호 확인</label>
+            <input type="password" class="signup__input" id="userPwdConfirm" name="userPwdConfirm" placeholder="비밀번호 확인"
+              required aria-invalid="false" aria-describedby="userPwdConfirmError" aria-live="assertive" />
+            <div class="errorMessage" id="userPwdConfirmError">비밀번호가 일치하지 않습니다.</div>
+          </div>
+          <div>
+            <label for="userEmail" class="a11yHidden">이메일</label>
+            <input type="email" class="signup__input" id="userEmail" name="userEmail" placeholder="이메일" required
+              aria-invalid="false" aria-describedby="userEmailError" aria-live="assertive" />
+            <div class="errorMessage" id="userEmailError">이메일 형식으로 입력해주세요.</div>
+          </div>
+          <div class="checkAllContainer">
+            <input type="checkbox" id="allAgree" name="agreeCheck" class="checkAll" />
+            <label for="allAgree" class="allAgree">모두 동의합니다.</label>
+          </div>
+          <ul class="agreeList" aria-label="회원가입 동의 리스트">
+            <li class="checkList">
+              <input type="checkbox" id="fourteenMore" name="agreeCheck" class="check" required />
+              <label for="fourteenMore" class="agree">만 14세 이상입니다.</label>
+            </li>
+            <li class="checkList">
+              <input type="checkbox" id="service" name="agreeCheck" class="check" required />
+              <label for="service" class="agree">[필수] 서비스 이용약관 동의</label>
+            </li>
+            <li class="checkList">
+              <input type="checkbox" id="private" name="agreeCheck" class="check" required />
+              <label for="private" class="agree">[필수] 개인정보 수집 및 서비스 활용 동의</label>
+            </li>
+            <li class="checkList">
+              <input type="checkbox" id="channel" name="agreeCheck" class="check" required />
+              <label for="channel" class="agree">[필수] 채널 홈페이지 개인정보 제 3자 제공동의</label>
+            </li>
+            <li class="checkList">
+              <input type="checkbox" id="third" name="agreeCheck" class="check" />
+              <label for="third" class="agree">[선택] 개인정보 제 3자 제공동의</label>
+            </li>
+            <li class="checkList">
+              <input type="checkbox" id="collect" name="agreeCheck" class="check" />
+              <label for="collect" class="agree">[선택] 개인정보 수집 및 서비스 활용 동의</label>
+              <ul class="marketingList" aria-label="마케팅 정보 수신동의 리스트">
+                <li class="checkList">
+                  <input type="checkbox" id="sms" name="agreeCheck" class="check" />
+                  <label for="sms" class="agree">[선택] 마케팅 정보 SMS 수신동의</label>
+                </li>
+                <li class="checkList">
+                  <input type="checkbox" id="email" name="agreeCheck" class="check" />
+                  <label for="email" class="agree">[선택] 마케팅 정보 이메일 수신동의</label>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button type="submit" class="signupBtn">가입하기</button>
+        </div>
+      </fieldset>
+    </form>
+  </main>
 
   <footer class="footer">
     <ul class="menu">

@@ -1328,9 +1328,23 @@ body {
 }
 .only__title {
   color: #ffffff;
-  font-size: clamp(12px, 1.9vw, 28px);
   font-weight: 700;
   margin-bottom: 0.75rem;
+}
+@media (max-width: 480px) {
+  .only__title {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .only__title {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .only__title {
+    font-size: 1.75rem;
+  }
 }
 .only__list {
   display: grid;
@@ -2095,10 +2109,6 @@ body {
   }
 }
 
-.bgColor {
-  background: #000;
-}
-
 .signup {
   color: #6b6b6b;
 }
@@ -2107,6 +2117,7 @@ body {
     max-width: 18rem;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 4.125rem;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -2114,6 +2125,7 @@ body {
     max-width: 26rem;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5.25rem;
   }
 }
 @media (min-width: 768px) {
@@ -2149,28 +2161,30 @@ body {
   color: #ffffff;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 1.75rem;
 }
 @media (max-width: 480px) {
   .signup__title {
     font-size: 1rem;
+    margin-bottom: 0.5rem;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .signup__title {
     font-size: 1.75rem;
+    margin-bottom: 1rem;
   }
 }
 @media (min-width: 768px) {
   .signup__title {
     font-size: 2.375rem;
+    margin-bottom: 1.75rem;
   }
 }
 .signup__desc {
   color: #898989;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 3.75rem;
+  margin-bottom: 1.5rem;
 }
 @media (max-width: 480px) {
   .signup__desc {
@@ -2184,6 +2198,7 @@ body {
 }
 @media (min-width: 768px) {
   .signup__desc {
+    margin-bottom: 3.75rem;
     font-size: 1.75rem;
   }
 }
@@ -2193,7 +2208,7 @@ body {
   border-radius: 4px;
   background: #212121;
   padding-left: 1rem;
-  color: #565656;
+  color: #ffffff;
 }
 @media (max-width: 480px) {
   .signup__input {
