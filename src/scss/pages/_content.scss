@@ -1,31 +1,30 @@
 @use './../utils' as *;
 
 body {
-  background-color: black;
+  background-color: $black;
 }
 
 @include desktop {
   .content {
     &__wrapper {
       margin-left: rem(70px);
-      
     }
     &__wrapper h2 {
-      font-size: rem(28.43px);
+      font-size: clamp(12px, 1.9vw, 28px);
       font-family: Pretendard;
       font-weight: 700;
       color: $white;
       margin-bottom: rem(12px);
     }
     &__posters {
-      min-width: rem(1920px);
       display: flex;
-    
     }
     &__link {
       display: flex;
       flex-direction: column;
-      margin-right: rem(16px);
+      width: 100%;
+      height: auto;
+      width: clamp(140px, 21vw, 280px);
     }
     &__poster img {
       width: 100%;
@@ -41,10 +40,11 @@ body {
   }
   .quick {
     &__wrapper {
-      margin-left: rem(70px);
+      padding-left: rem(70px);
+      padding-bottom: rem(36px);
     }
     &__wrapper h2 {
-      font-size: rem(28.43px);
+      font-size: clamp(12px, 1.9vw, 28px);
       font-family: Pretendard;
       font-weight: 700;
       color: $white;
@@ -54,19 +54,19 @@ body {
     }
     &__posters {
       display: flex;
-      min-width: rem(1920px);
+      max-width: rem(1920px);
+      overflow: hidden;
+      gap: rem(16px);
     }
 
     &__link {
       display: flex;
       flex-direction: column;
-      margin-right: rem(16px);
       position: relative;
+      width: clamp(140px, 28vw, 345px);
     }
     &__red {
-      position: absolute;
-      top: rem(5px);
-      left: rem(5px);
+      @include posLeftTop(5px, 5px);
       background-color: #c73e4e;
       width: rem(96px);
       height: rem(30px);
@@ -100,23 +100,24 @@ body {
 @include tablet {
   .content {
     &__wrapper {
-      margin-left: rem(40px);
+      padding-left: rem(40px);
     }
     &__wrapper h2 {
-      font-size: 16px;
+      font-size: rem(16px);
       font-family: Pretendard;
       font-weight: 700;
       color: $white;
-      margin-bottom: rem(8px);
+      padding-bottom: rem(8px);
     }
     &__posters {
       display: flex;
       min-width: rem(768px);
+      gap: rem(8px);
     }
     &__link {
       display: flex;
       flex-direction: column;
-      margin-right: rem(8px);
+      width: clamp(30px, 25vw, 170px);
     }
     &__poster img {
       width: 100%;
@@ -126,11 +127,13 @@ body {
       color: $gray-200;
       font-size: rem(12.003px);
       font-family: Pretendard;
+      margin-top: rem(4px);
     }
   }
   .quick {
     &__wrapper {
       margin-left: rem(40px);
+      padding-bottom: rem(28px);
     }
     &__wrapper h2 {
       font-size: rem(16px);
@@ -144,23 +147,22 @@ body {
     &__posters {
       display: flex;
       min-width: rem(768px);
+      gap: rem(8px);
     }
     &__link {
       display: flex;
       flex-direction: column;
-      margin-right: rem(8px);
       position: relative;
+      width: clamp(25px, 38vw, 200px);
     }
     &__red {
-      position: absolute;
-      top: rem(2px);
-      left: rem(2px);
+      @include posLeftTop(2px, 2px);
       background-color: #c73e4e;
-      width: rem(61px);
+      width: rem(86px);
       height: rem(16px);
       border-radius: rem(4px);
       color: $gray-100;
-      font-size: rem(9px);
+      font-size: rem(6px);
       font-family: Pretendard;
       padding: rem(1px) rem(6px);
     }
@@ -173,6 +175,8 @@ body {
       font-family: Pretendard;
       font-weight: 600;
       color: $gray-200;
+      margin-top: rem(4px);
+      margin-bottom: rem(4px);
     }
     &__episode {
       font-size: rem(12.003px);
@@ -186,6 +190,7 @@ body {
   .content {
     &__wrapper {
       margin-left: rem(8px);
+      overflow: hidden;
     }
     &__wrapper h2 {
       font-size: rem(12.003px);
@@ -196,16 +201,16 @@ body {
     }
     &__posters {
       display: flex;
-      min-width: rem(480px);
+      gap: rem(7.11px);
     }
     &__link {
       display: flex;
       flex-direction: column;
-      margin-right: rem(7.11px);
+      width: clamp(92px, 30vw, 180px);
     }
     &__poster img {
-      width: rem(92.894px);
-      height: rem(134px);
+      width: 100%;
+      height: auto;
     }
     &__title {
       display: none;
@@ -213,7 +218,8 @@ body {
   }
   .quick {
     &__wrapper {
-      margin-left: rem(8px);
+      padding-left: rem(8px);
+      padding-bottom: rem(16px);
     }
     &__wrapper h2 {
       font-size: rem(12.003px);
@@ -227,25 +233,25 @@ body {
     &__posters {
       display: flex;
       min-width: rem(480px);
+      gap: rem(8px);
     }
     &__link {
       display: flex;
       flex-direction: column;
-      margin-right: rem(8px);
       position: relative;
+      width: clamp(135px, 30vw, 400px);
     }
     &__red {
-      position: absolute;
-      top: rem(1px);
-      left: rem(1px);
+      @include posLeftTop(1px, 1px);
       background-color: #c73e4e;
-      width: rem(61px);
+      width: rem(90px);
       height: rem(16px);
       border-radius: rem(4px);
       color: $gray-100;
-      font-size: rem(6px);
+      font-size: rem(1px);
       font-family: Pretendard;
-      padding: rem(1px) rem(6px);
+      padding: rem(0.1px) rem(6px);
+      @include textOver;
     }
     &__poster img {
       width: 100%;
