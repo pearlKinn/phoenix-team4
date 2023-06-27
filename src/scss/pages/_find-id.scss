@@ -80,7 +80,7 @@
   }
   &__id__user__email {
     background: $dark-bg-2;
-    color: $gray-600;
+    color: $white;
     font-family: Pretendard;
     border: none;
     border-radius: rem(4px);
@@ -211,6 +211,7 @@
     }
   }
   &__identity__btn {
+    @include flexbox($justify: center, $items: center);
     background: $gray-100;
     font-family: Pretendard;
     font-weight: 600;
