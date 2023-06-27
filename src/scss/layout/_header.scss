@@ -42,7 +42,6 @@
   @include tablet {
     width: 77px;
     min-width: 47px;
-    
   }
   @include mobile {
     width: 46px;
@@ -55,9 +54,8 @@
   margin-bottom: 27px;
 
   @include tablet {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
   }
-
 
   &__list {
     @include flexbox($items: center);
@@ -66,20 +64,20 @@
     margin-top: 30px;
 
     @include tablet {
-      gap: rem(28px);  
+      gap: rem(28px);
       margin-top: 10px;
     }
 
     @include mobile {
-    display: none
+      display: none;
     }
   }
-    &__list2 {
+  &__list2 {
     @include flexbox;
     margin-top: 30px;
 
     @include desktop {
-    gap: rem(52px);
+      gap: rem(52px);
     }
 
     @include tablet {
@@ -89,27 +87,27 @@
     }
 
     @include mobile {
-      @include flexbox($justify:flex-end, $gap:rem(20px));
+      @include flexbox($justify: flex-end, $gap: rem(20px));
       flex-grow: 1;
-      margin-top:20px;
+      margin-top: 20px;
     }
-    }
-  
+  }
+
   &__item1 {
     @include flexbox($justify: center, $items: center);
-  }    
+  }
 
   &__text {
-  white-space: nowrap;
+    white-space: nowrap;
   }
 
   &__item4 {
-  @include desktop {
-    width: 111px;
-  }
-  @include tablet {
-    width: 65px;
-  }
+    @include desktop {
+      width: 111px;
+    }
+    @include tablet {
+      width: 65px;
+    }
   }
 
   &__item5 {
@@ -117,19 +115,19 @@
       width: 40px;
     }
     @include tablet {
-    width: 24px;
+      width: 24px;
     }
     @include mobile {
-    width: 18px;
+      width: 18px;
     }
   }
 
   &__item6 {
     @include desktop {
-    width: 40px;
+      width: 40px;
     }
     @include tablet {
-    width: 24px;
+      width: 24px;
     }
     @include mobile {
       width: 18px;
@@ -139,7 +137,6 @@
 
 .menu__text__item {
   @include flexbox($justify: center, $items: center);
-
 }
 
 .menu__item__icon {
