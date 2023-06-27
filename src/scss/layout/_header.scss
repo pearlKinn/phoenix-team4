@@ -10,14 +10,14 @@
 
   @include desktop {
     padding: rem(30px) rem(70px);
-    font-size: rem(16px);
+    font-size: rem(21px);
     gap: rem(52px);
   }
 
   @include tablet {
     padding: rem(16px) rem(40px);
     gap: rem(16px);
-    font-size: rem(10px);
+    font-size: rem(12px);
     position: absolute;
     width: 100%;
     top: 0;

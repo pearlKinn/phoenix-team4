@@ -378,7 +378,7 @@ legend {
 @media (min-width: 768px) {
   .Header {
     padding: 1.875rem 4.375rem;
-    font-size: 1rem;
+    font-size: 1.3125rem;
     gap: 3.25rem;
   }
 }
@@ -386,7 +386,7 @@ legend {
   .Header {
     padding: 1rem 2.5rem;
     gap: 1rem;
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     position: absolute;
     width: 100%;
     top: 0;
@@ -743,11 +743,31 @@ legend {
   background: #000000;
   padding-left: 70px;
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  .event {
+    padding-left: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .event {
+    padding-left: 8px;
+  }
+}
 .event__title {
   font-size: 28px;
   font-weight: 700;
   line-height: 140%;
   color: #ffffff;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .event__title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .event__title {
+    font-size: 12px;
+  }
 }
 .event__list {
   display: flex;
@@ -789,7 +809,7 @@ body {
     margin-left: 4.375rem;
   }
   .content__wrapper h2 {
-    font-size: clamp(12px, 1.9vw, 28px);
+    font-size: 1.776875rem;
     font-family: Pretendard;
     font-weight: 700;
     color: #ffffff;
@@ -797,8 +817,9 @@ body {
   }
   .content__posters {
     display: flex;
-    max-width: 120rem;
+    max-width: 115.625rem;
     gap: 1rem;
+    overflow: hidden;
   }
   .content__link {
     display: flex;
@@ -822,7 +843,7 @@ body {
     padding-bottom: 2.25rem;
   }
   .quick__wrapper h2 {
-    font-size: clamp(12px, 1.9vw, 28px);
+    font-size: 1.776875rem;
     font-family: Pretendard;
     font-weight: 700;
     color: #ffffff;
@@ -847,7 +868,6 @@ body {
     left: 5px;
     background-color: #c73e4e;
     width: 6rem;
-    height: 1.875rem;
     border-radius: 0.25rem;
     color: #e1e1e1;
     font-size: 1rem;
@@ -933,12 +953,11 @@ body {
     left: 2px;
     background-color: #c73e4e;
     width: 3.8125rem;
-    height: 1rem;
     border-radius: 0.25rem;
     color: #e1e1e1;
     font-size: 0.375rem;
     font-family: Pretendard;
-    padding: 0.0625rem 0.375rem;
+    padding: 0.125rem 0.375rem;
   }
   .quick__poster img {
     width: 100%;
@@ -1015,12 +1034,11 @@ body {
     left: 1px;
     background-color: #c73e4e;
     width: 3.8125rem;
-    height: 1rem;
     border-radius: 0.25rem;
     color: #e1e1e1;
     font-size: 0.0625rem;
     font-family: Pretendard;
-    padding: 0.00625rem 0.375rem;
+    padding: 0rem 0.375rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

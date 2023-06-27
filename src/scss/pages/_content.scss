@@ -10,7 +10,7 @@ body {
       margin-left: rem(70px);
     }
     &__wrapper h2 {
-      font-size: clamp(12px, 1.9vw, 28px);
+      font-size: rem(28.43px);
       font-family: Pretendard;
       font-weight: 700;
       color: $white;
@@ -18,8 +18,9 @@ body {
     }
     &__posters {
       display: flex;
-      max-width: rem(1920px);
+      max-width: rem(1850px);
       gap: rem(16px);
+      overflow: hidden;
     }
     &__link {
       display: flex;
@@ -45,7 +46,7 @@ body {
       padding-bottom: rem(36px);
     }
     &__wrapper h2 {
-      font-size: clamp(12px, 1.9vw, 28px);
+      font-size: rem(28.43px);
       font-family: Pretendard;
       font-weight: 700;
       color: $white;
@@ -70,7 +71,6 @@ body {
       @include posLeftTop(5px, 5px);
       background-color: #c73e4e;
       width: rem(96px);
-      height: rem(30px);
       border-radius: rem(4px);
       color: $gray-100;
       font-size: rem(16px);
@@ -160,12 +160,11 @@ body {
       @include posLeftTop(2px, 2px);
       background-color: #c73e4e;
       width: rem(61px);
-      height: rem(16px);
       border-radius: rem(4px);
       color: $gray-100;
       font-size: rem(6px);
       font-family: Pretendard;
-      padding: rem(1px) rem(6px);
+      padding: rem(2px) rem(6px);
     }
     &__poster img {
       width: 100%;
@@ -246,12 +245,11 @@ body {
       @include posLeftTop(1px, 1px);
       background-color: #c73e4e;
       width: rem(61px);
-      height: rem(16px);
       border-radius: rem(4px);
       color: $gray-100;
       font-size: rem(1px);
       font-family: Pretendard;
-      padding: rem(0.1px) rem(6px);
+      padding: rem(0px) rem(6px);
       @include textOver;
     }
     &__poster img {
