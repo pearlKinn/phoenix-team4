@@ -9,13 +9,13 @@
   @include flexbox($items: center);
 
   @include desktop {
-    padding: rem(30px) rem(70px);
+    padding: 0 rem(70px);
     font-size: rem(21px);
     gap: rem(52px);
   }
 
   @include tablet {
-    padding: rem(16px) rem(40px);
+    padding: 0 rem(40px);
     gap: rem(16px);
     font-size: rem(12px);
     position: absolute;
@@ -63,9 +63,11 @@
     @include flexbox($items: center);
     flex-grow: 1;
     gap: rem(52px);
+    margin-top: 30px;
 
     @include tablet {
       gap: rem(28px);  
+      margin-top: 10px;
     }
 
     @include mobile {
@@ -74,12 +76,14 @@
   }
     &__list2 {
     @include flexbox;
+    margin-top: 30px;
 
     @include desktop {
     gap: rem(52px);
     }
 
     @include tablet {
+      margin-top: 10px;
       gap: rem(24px);
       align-items: center;
     }
