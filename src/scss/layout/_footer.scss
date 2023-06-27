@@ -41,6 +41,10 @@
     display: none;
   }
 
+  @include tablet {
+    display: none;
+  }
+
   &__divider {
     color: $gray-500;
     border-left: 1px solid $gray-500;
@@ -54,8 +58,9 @@
   }
 }
 
-.menu {
-  @include flexbox($gap: 20px);
+.footer__menu {
+  @include flexbox();
+  gap: 1vw;
   border-top: 1px solid $gray-800;
 
   @include mobile {
