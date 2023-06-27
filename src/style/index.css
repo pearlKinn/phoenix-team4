@@ -791,6 +791,7 @@ body {
   }
   .content__posters {
     display: flex;
+    gap: 1rem;
   }
   .content__link {
     display: flex;
@@ -925,7 +926,7 @@ body {
     top: 2px;
     left: 2px;
     background-color: #c73e4e;
-    width: 5.375rem;
+    width: 3.8125rem;
     height: 1rem;
     border-radius: 0.25rem;
     color: #e1e1e1;
@@ -1007,7 +1008,7 @@ body {
     top: 1px;
     left: 1px;
     background-color: #c73e4e;
-    width: 5.625rem;
+    width: 3.8125rem;
     height: 1rem;
     border-radius: 0.25rem;
     color: #e1e1e1;
