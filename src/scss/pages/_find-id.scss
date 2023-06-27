@@ -1,0 +1,238 @@
+@use './../utils' as *;
+@use '../layout/footer';
+
+// 아이디 찾기 섹션
+.find {
+  &__id--container {
+    @include autoMargin;
+    @include flexbox($direction: column);
+    height: auto;
+    color: $white;
+    @include desktop {
+      width: rem(732px);
+      padding-top: rem(40px);
+    }
+    @include tablet {
+      width: rem(416px);
+      padding-top: rem(26px);
+    }
+    @include mobile {
+      width: rem(288px);
+      padding-top: rem(18px);
+    }
+  }
+  &__id__title__wrapper {
+    @include flexbox;
+  }
+  &__id__title {
+    @include autoMargin;
+
+    font-family: Pretendard;
+    font-weight: 700;
+
+    @include desktop {
+      font-size: rem(37.897px);
+      margin-bottom: rem(60px);
+    }
+    @include tablet {
+      font-size: rem(28.43px);
+      margin-bottom: rem(24px);
+    }
+    @include mobile {
+      font-size: rem(16px);
+      margin-bottom: rem(28px);
+    }
+  }
+  &__id__dt {
+    font-family: Pretendard;
+    font-weight: 600;
+
+    @include desktop {
+      font-size: rem(28.43px);
+      margin-bottom: rem(8px);
+    }
+    @include tablet {
+      font-size: rem(16px);
+      margin-bottom: rem(4px);
+    }
+    @include mobile {
+      font-size: rem(12.003px);
+      margin-bottom: rem(4px);
+    }
+  }
+  &__id__dd {
+    font-family: Pretendard;
+    font-weight: 600;
+    color: $gray-400;
+
+    @include desktop {
+      font-size: rem(28.43px);
+      margin-bottom: rem(24px);
+    }
+    @include tablet {
+      font-size: rem(16px);
+      margin-bottom: rem(16px);
+    }
+    @include mobile {
+      font-size: rem(12.003px);
+      margin-bottom: rem(16px);
+    }
+  }
+  &__id__user__email {
+    background: $dark-bg-2;
+    color: $gray-600;
+    font-family: Pretendard;
+    border: none;
+    border-radius: rem(4px);
+
+    @include desktop {
+      width: rem(732px);
+      height: rem(96px);
+      font-size: rem(28.43px);
+      padding-left: rem(24px);
+      margin-bottom: 36px;
+    }
+    @include tablet {
+      width: rem(416px);
+      height: rem(54px);
+      font-size: rem(16px);
+      padding-left: rem(16px);
+      margin-bottom: rem(24px);
+    }
+    @include mobile {
+      width: rem(288px);
+      height: rem(46px);
+      font-size: rem(12.003px);
+      padding-left: rem(16px);
+      margin-bottom: rem(20px);
+    }
+  }
+  &__id__btn {
+    background: $gray-700;
+    color: $gray-400;
+    border-style: none;
+    border-radius: rem(4px);
+    font-family: Pretendard;
+    font-weight: 600;
+    cursor: pointer;
+
+    @include desktop {
+      width: rem(732px);
+      height: rem(86px);
+      font-size: rem(28.43px);
+    }
+    @include tablet {
+      width: rem(416px);
+      height: rem(50px);
+      font-size: rem(16px);
+    }
+    @include mobile {
+      width: rem(288px);
+      height: rem(42px);
+      font-size: rem(12.003px);
+    }
+  }
+  @at-root .or {
+    @include flexbox($justify: space-between, $items: center);
+    color: $gray-800;
+
+    @include desktop {
+      @include marginY(67px);
+    }
+    @include tablet {
+      @include marginY(35.5px);
+    }
+    @include mobile {
+      @include marginY(30.5px);
+    }
+  }
+  @at-root .or__title {
+    @include desktop {
+      font-size: rem(16px);
+    }
+    @include tablet {
+      font-size: rem(12.003px);
+    }
+    @include mobile {
+      font-size: rem(12.003px);
+    }
+  }
+  @at-root .or__line {
+    background: white;
+    height: 1px;
+    background: $gray-800;
+    border: none;
+
+    @include desktop {
+      width: rem(338px);
+    }
+    @include tablet {
+      width: rem(194px);
+    }
+    @include mobile {
+      width: rem(129.5px);
+    }
+  }
+
+  // 본인인증 섹션
+  &__id__identity__dt {
+    font-family: Pretendard;
+    font-weight: 600;
+
+    @include desktop {
+      font-size: rem(28.43px);
+      margin-bottom: rem(8px);
+    }
+    @include tablet {
+      font-size: rem(16px);
+      margin-bottom: rem(4px);
+    }
+    @include mobile {
+      font-size: rem(12.003px);
+      margin-bottom: rem(4px);
+    }
+  }
+  &__id__identity__dd {
+    font-family: Pretendard;
+    font-weight: 600;
+    color: $gray-400;
+
+    @include desktop {
+      font-size: rem(21.328px);
+      margin-bottom: rem(36px);
+    }
+    @include tablet {
+      font-size: rem(16px);
+      margin-bottom: rem(16px);
+    }
+    @include mobile {
+      font-size: rem(12.003px);
+      margin-bottom: rem(16px);
+    }
+  }
+  &__identity__btn {
+    background: $gray-100;
+    font-family: Pretendard;
+    font-weight: 600;
+    color: $black;
+    border-radius: rem(4px);
+    border: none;
+    cursor: pointer;
+
+    @include desktop {
+      width: rem(732px);
+      height: rem(86px);
+      font-size: rem(28.43px);
+    }
+    @include tablet {
+      width: rem(416px);
+      height: rem(50px);
+      font-size: rem(16px);
+    }
+    @include mobile {
+      width: rem(288px);
+      height: rem(42px);
+      font-size: rem(12.003px);
+    }
+  }
+}
