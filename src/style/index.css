@@ -1683,19 +1683,19 @@ body {
 @media (min-width: 768px) {
   .find__id--container {
     width: 45.75rem;
-    padding-top: 2.5rem;
+    margin-top: 2.5rem;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .find__id--container {
     width: 26rem;
-    padding-top: 1.625rem;
+    margin-top: 5.25rem;
   }
 }
 @media (max-width: 480px) {
   .find__id--container {
     width: 18rem;
-    padding-top: 1.125rem;
+    margin-top: 2.75rem;
   }
 }
 .find__id__title__wrapper {
