@@ -2087,4 +2087,303 @@ body {
   }
 }
 
+.bgColor {
+  background: #000;
+}
+
+.signup {
+  color: #6b6b6b;
+}
+@media (max-width: 480px) {
+  .signup {
+    max-width: 18rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .signup {
+    max-width: 26rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 768px) {
+  .signup {
+    max-width: 45.625rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.signup__container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0rem;
+}
+@media (max-width: 480px) {
+  .signup__container {
+    gap: 1rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .signup__container {
+    gap: 1.125rem;
+  }
+}
+@media (min-width: 768px) {
+  .signup__container {
+    gap: 2.125rem;
+  }
+}
+.signup__title {
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+@media (max-width: 480px) {
+  .signup__title {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .signup__title {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 768px) {
+  .signup__title {
+    font-size: 2.375rem;
+  }
+}
+.signup__desc {
+  color: #898989;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3.75rem;
+}
+@media (max-width: 480px) {
+  .signup__desc {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .signup__desc {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .signup__desc {
+    font-size: 1.75rem;
+  }
+}
+.signup__input {
+  width: 100%;
+  border: 0;
+  border-radius: 4px;
+  background: #212121;
+  padding-left: 1rem;
+  color: #565656;
+}
+@media (max-width: 480px) {
+  .signup__input {
+    height: 2.875rem;
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .signup__input {
+    height: 3.375rem;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .signup__input {
+    height: 6rem;
+    font-size: 1.75rem;
+    padding-left: 1.5rem;
+  }
+}
+.signup__input::placeholder {
+  color: #565656;
+}
+@media (max-width: 480px) {
+  .signup__input::placeholder {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .signup__input::placeholder {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .signup__input::placeholder {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 480px) {
+  .errorMessage {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .errorMessage {
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .errorMessage {
+    font-size: 1.3125rem;
+    margin-top: 0.75rem;
+  }
+}
+
+.checkAll,
+.check,
+.checkMarketing {
+  appearance: none;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.checkAll:checked + label {
+  background: url(../images/signup/checked.svg) 0 50%/16px no-repeat;
+}
+@media (min-width: 768px) {
+  .checkAll:checked + label {
+    background: url(../images/signup/checked.svg) no-repeat;
+  }
+}
+.checkAllContainer {
+  position: relative;
+  font-size: 0.75rem;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .checkAllContainer {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 768px) {
+  .checkAllContainer {
+    font-size: 1.3125rem;
+  }
+}
+
+.check:checked + label {
+  background: url(../images/signup/checked-no-fill.svg) 0 50%/16px no-repeat;
+}
+@media (min-width: 768px) {
+  .check:checked + label {
+    background: url(../images/signup/checked-no-fill.svg) no-repeat;
+  }
+}
+.checkList {
+  position: relative;
+}
+@media (max-width: 480px) {
+  .checkList {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .checkList {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 768px) {
+  .checkList {
+    font-size: 1.3125rem;
+  }
+}
+
+.allAgree {
+  display: block;
+  height: 26px;
+  line-height: 26px;
+  background: url(../images/signup/un-check.svg) 0 50%/16px no-repeat;
+  padding-left: 1.5rem;
+}
+@media (min-width: 768px) {
+  .allAgree {
+    background: url(../images/signup/un-check.svg) no-repeat;
+    padding-left: 2.375rem;
+  }
+}
+
+.agree {
+  display: block;
+  height: 26px;
+  line-height: 26px;
+  background: url(../images/signup/check-no-fill.svg) 0 50%/16px no-repeat;
+  padding-left: 1.5rem;
+}
+@media (min-width: 768px) {
+  .agree {
+    background: url(../images/signup/check-no-fill.svg) no-repeat;
+    padding-left: 2.375rem;
+  }
+}
+.agreeList {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0rem;
+  gap: 8px;
+}
+@media (min-width: 768px) {
+  .agreeList {
+    gap: 12px;
+  }
+}
+
+.marketingList {
+  margin-left: 2.25rem;
+  margin-top: 0.625rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0rem;
+  gap: 8px;
+}
+@media (min-width: 768px) {
+  .marketingList {
+    margin-top: 1rem;
+    gap: 12px;
+  }
+}
+
+.signupBtn {
+  border: 0;
+  border-radius: 4px;
+  color: #898989;
+  background: #404040;
+}
+@media (max-width: 480px) {
+  .signupBtn {
+    height: 2.625rem;
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .signupBtn {
+    height: 3.125rem;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .signupBtn {
+    height: 5.375rem;
+    font-size: 1.75rem;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
