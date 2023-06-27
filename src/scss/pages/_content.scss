@@ -112,8 +112,9 @@ body {
     }
     &__posters {
       display: flex;
-      min-width: rem(768px);
+      max-width: rem(738px);
       gap: rem(8px);
+      overflow: hidden;
     }
     &__link {
       display: flex;
@@ -147,8 +148,9 @@ body {
     }
     &__posters {
       display: flex;
-      min-width: rem(768px);
+      max-width: rem(738px);
       gap: rem(8px);
+      overflow: hidden;
     }
     &__link {
       display: flex;
@@ -232,8 +234,9 @@ body {
     }
     &__posters {
       display: flex;
-      min-width: rem(480px);
+      min-width: rem(320px);
       gap: rem(8px);
+      overflow: hidden;
     }
     &__link {
       display: flex;
