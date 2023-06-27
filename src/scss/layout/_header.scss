@@ -3,6 +3,7 @@
 // // 데스크탑 헤더
 
 .Header {
+  position: relative;
   width: 100%;
   color: $base-text;
   @include flexbox($items: center);
@@ -18,7 +19,9 @@
     gap: rem(16px);
     font-size: rem(10px);
     position: absolute;
-    width: 100%; 
+    width: 100%;
+    top: 0;
+    left: 0;
   }
 
   @include mobile {
@@ -26,7 +29,8 @@
     padding: rem(10px) rem(12px);
     font-size: rem(12px);
     position: absolute;
- 
+    top: 0;
+    left: 0;
   }
 }
 
