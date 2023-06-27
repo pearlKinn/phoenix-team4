@@ -1,64 +1,119 @@
 @use "./../utils/" as *;
 
-// 데스크탑 헤더
-html {
-  font-size: calc(8px + 0.5vw);
+// // 데스크탑 헤더
+
+.header {
+  width: 100%;
+  color: $base-text;
+  @include flexbox($items: center);
+
+  @include desktop {
+    padding: rem(30px) rem(70px);
+    font-size: rem(16px);
+    gap: rem(52px);
+  }
+
+  @include tablet {
+    padding: rem(18px) rem(40px);
+    gap: rem(16px);
+    font-size: rem(10px);
+    position: absolute;
+    width: 100%; 
+  }
+
+  @include mobile {
+    padding: rem(10px) rem(12px);
+    font-size: rem(12px);
+    position: absolute; 
+  }
 }
 
-.Header {
-  color: $base-text;
-  @include flexbox($gap: 52px, $items: center);
-  @include desktop {
-    background: $black;
-    padding: rem(30px) rem(70px);
-    font-size: rem(12px);
+.header__logo {
+  @include tablet {
+    width: 77px;
+  }
+
+  @include mobile {
+    width: 46px;
   }
 }
 
 .menu {
-  @include flexbox($justify: space-between);
+  @include flexbox;
   flex-grow: 1;
+
+
+  &__list {
+    @include flexbox($items: center);
+    flex-grow: 1;
+    gap: rem(52px);
+
+    @include tablet {
+      gap: rem(28px);  
+    }
+
+    @include mobile {
+    display: none
+    }
+  }
+    &__list2 {
+    @include flexbox;  
+
+    @include desktop {
+    gap: rem(52px);
+    }
+
+    @include tablet {
+      gap: rem(24px);
+    }
+
+    @include mobile {
+      @include flexbox($justify:flex-end, $gap:rem(10px));
+      flex-grow: 1;
+    }
+    }
+  
+  &__item1 {
+    @include flexbox($justify: center, $items: center);
+  }    
+
+  &__text {
+  white-space: nowrap;
+  }
+
+  &__item4 {
+  width: 65px;
+  }
+
+  &__item5 {
+    @include desktop {
+      width: 40px;
+    }
+    @include tablet {
+    width: 24px;
+    }
+    @include mobile {
+    width: 18px;
+    }
+  }
+
+  &__item6 {
+    @include desktop {
+    width: 40px;
+    }
+    @include tablet {
+    width: 24px;
+    }
+    @include mobile {
+      width: 18px;
+    }
+  }
 }
 
-.menu__list {
-  @include flexbox($gap: 52px, $items: center);
-}
-
-.menu__item1 {
+.menu__text__item {
   @include flexbox($justify: center, $items: center);
 }
 
-.menu__item1__text {
-  @include flexbox($justify: center, $items: center);
-}
-.menu__item1__icon {
+.menu__item__icon {
   padding-right: 10px;
-}
-
-.menu__list2 {
-  @include flexbox($gap: 40px);
-}
-
-//  테블릿 헤더
-
-@include tablet {
-  .Header {
-    padding: rem(16px) rem(40px);
-    gap: rem(28px);
-    font-size: rem(12px);
-    position: absolute;
-  }
-}
-
-@include mobile {
-  .Header {
-    position: absolute;
-  }
-
-  .menu {
-    @include flexbox($justify: flex-grow);
-  }
-  .menu__list {
-    display: none;
-  }
 }

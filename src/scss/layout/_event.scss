@@ -6,28 +6,46 @@
   @include flexbox($direction: column);
   background:$black;
   padding-left: 70px;
-  @include desktop {
 
+  .event__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 140%;
+    color: $white;
   }
 
-  @include tablet {
-
+  .event__list {
+    @include flexbox($gap:16px);
   }
 
-  @include mobile {
-    
+  .event-text {
+
   }
 }
+.event__list li {
+  width:347px;
+}
 
-.event__title {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 140%;
-  color: $white;
+.event__list li a {
+  display: block;
+  width: 100%;
+}
+
+.event__list li a img {
+  width: 100%;
+}
+
+@include desktop {
+
+}
+
+@include tablet {
+
+}
+
+@include mobile {
+  
 }
 
 
-.event__list {
-  @include flexbox($gap:16px);
-}
 

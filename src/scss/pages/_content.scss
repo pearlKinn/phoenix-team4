@@ -8,6 +8,7 @@ body {
   .content {
     &__wrapper {
       margin-left: rem(70px);
+      
     }
     &__wrapper h2 {
       font-size: rem(28.43px);
@@ -19,6 +20,7 @@ body {
     &__posters {
       min-width: rem(1920px);
       display: flex;
+    
     }
     &__link {
       display: flex;
