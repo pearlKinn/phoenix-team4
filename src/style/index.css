@@ -2112,6 +2112,7 @@ body {
   color: #565656;
   border: 1px solid #212121;
   margin-bottom: 36px;
+  color: white;
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .email__input {
