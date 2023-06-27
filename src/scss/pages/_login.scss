@@ -1,4 +1,5 @@
 @use "../utils" as *;
+@use "../layout/header";
 @use "../layout/footer";
 
 // 헤더 부분
@@ -56,6 +57,7 @@
     border-radius: 4px;
     height: 4.8rem;
     background: $dark-bg-2;
+    color: $white;
 
     @include mobile {
       max-width: rem(288px);
@@ -73,6 +75,13 @@
       @include paddingX(16px);
     }
   }
+
+  &__input:focus {
+    outline: none;
+    border: 1px solid $gray-100;
+    color: $white;
+  }
+
   &__password {
     position: relative;
   }
@@ -185,7 +194,6 @@
 }
 
 .option {
-
   &__list {
     @include flexbox;
     justify-content: center;
@@ -201,9 +209,8 @@
     display: block;
     @include mobile {
       font-size: rem(12.003px);
-
     }
-  
+
     @include tablet {
       font-size: rem(16px);
     }
