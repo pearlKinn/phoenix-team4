@@ -1,64 +1,151 @@
 @use "./../utils/" as *;
 
-// 데스크탑 헤더
-html {
-  font-size: calc(8px + 0.5vw);
-}
+// // 데스크탑 헤더
 
 .Header {
+  position: relative;
+  width: 100%;
   color: $base-text;
-  @include flexbox($gap: 52px, $items: center);
+  @include flexbox($items: center);
+
   @include desktop {
-    background: $black;
     padding: rem(30px) rem(70px);
+    font-size: rem(16px);
+    gap: rem(52px);
+  }
+
+  @include tablet {
+    padding: rem(16px) rem(40px);
+    gap: rem(16px);
+    font-size: rem(10px);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  @include mobile {
+    height: 38px;
+    padding: rem(10px) rem(12px);
     font-size: rem(12px);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.header__logo {
+  @include desktop {
+    width: 132px;
+    min-width: 78px;
+  }
+  @include tablet {
+    width: 77px;
+    min-width: 47px;
+    
+  }
+  @include mobile {
+    width: 46px;
   }
 }
 
 .menu {
-  @include flexbox($justify: space-between);
+  @include flexbox;
   flex-grow: 1;
+  margin-bottom: 27px;
+
+  @include tablet {
+  margin-bottom: 16px;
+  }
+
+
+  &__list {
+    @include flexbox($items: center);
+    flex-grow: 1;
+    gap: rem(52px);
+
+    @include tablet {
+      gap: rem(28px);  
+    }
+
+    @include mobile {
+    display: none
+    }
+  }
+    &__list2 {
+    @include flexbox;
+
+    @include desktop {
+    gap: rem(52px);
+    }
+
+    @include tablet {
+      gap: rem(24px);
+      align-items: center;
+    }
+
+    @include mobile {
+      @include flexbox($justify:flex-end, $gap:rem(20px));
+      flex-grow: 1;
+      margin-top:20px;
+    }
+    }
+  
+  &__item1 {
+    @include flexbox($justify: center, $items: center);
+  }    
+
+  &__text {
+  white-space: nowrap;
+  }
+
+  &__item4 {
+  @include desktop {
+    width: 111px;
+  }
+  @include tablet {
+    width: 65px;
+  }
+  }
+
+  &__item5 {
+    @include desktop {
+      width: 40px;
+    }
+    @include tablet {
+    width: 24px;
+    }
+    @include mobile {
+    width: 18px;
+    }
+  }
+
+  &__item6 {
+    @include desktop {
+    width: 40px;
+    }
+    @include tablet {
+    width: 24px;
+    }
+    @include mobile {
+      width: 18px;
+    }
+  }
 }
 
-.menu__list {
-  @include flexbox($gap: 52px, $items: center);
-}
-
-.menu__item1 {
+.menu__text__item {
   @include flexbox($justify: center, $items: center);
+
 }
 
-.menu__item1__text {
-  @include flexbox($justify: center, $items: center);
-}
-.menu__item1__icon {
+.menu__item__icon {
   padding-right: 10px;
-}
 
-.menu__list2 {
-  @include flexbox($gap: 40px);
-}
-
-//  테블릿 헤더
-
-@include tablet {
-  .Header {
-    padding: rem(16px) rem(40px);
-    gap: rem(28px);
-    font-size: rem(12px);
-    position: absolute;
+  @include tablet {
+    width: 20px;
   }
 }
 
-@include mobile {
-  .Header {
-    position: absolute;
-  }
-
-  .menu {
-    @include flexbox($justify: flex-grow);
-  }
-  .menu__list {
-    display: none;
-  }
+.menu__box__item {
+  width: 100%;
 }
