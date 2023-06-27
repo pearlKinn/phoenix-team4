@@ -1,51 +1,39 @@
 @use "./../utils/" as *;
 @use "./../base/" as *;
 
-
 .event {
-  @include flexbox($direction: column);
   background:$black;
   padding-left: 70px;
 
-  .event__title {
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 140%;
-    color: $white;
+  &__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%;
+  color: $white;
   }
 
-  .event__list {
-    @include flexbox($gap:16px);
+  &__list {
+  @include flexbox($gap:16px);
+  flex: 1 0 calc(19% - 16px);
+  margin-bottom: 16px;
+  overflow: hidden;
   }
 
-  .event-text {
+  &__text{
+    display: block;
+    height: auto;
+    width: clamp(60px, 30vw, 150px)
+  }
 
+  &__item {
+    @include desktop {
+    min-width: 340px;
+    }
+    @include tablet {
+    min-width: 200px;
+    }
+    @include mobile {
+    min-width: 130px;
+    }
   }
 }
-.event__list li {
-  width:347px;
-}
-
-.event__list li a {
-  display: block;
-  width: 100%;
-}
-
-.event__list li a img {
-  width: 100%;
-}
-
-@include desktop {
-
-}
-
-@include tablet {
-
-}
-
-@include mobile {
-  
-}
-
-
-
