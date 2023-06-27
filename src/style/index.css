@@ -1427,7 +1427,7 @@ body {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   border-style: none;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   height: 4.8rem;
   background: #212121;
   color: #ffffff;
@@ -1468,7 +1468,7 @@ body {
   font-size: 1.776875rem;
   font-weight: 600;
   border-style: none;
-  border-radius: 4px;
+  border-radius: rrem(4px);
   margin-bottom: 3rem;
 }
 @media (max-width: 480px) {
@@ -1537,7 +1537,7 @@ body {
     width: 1.625rem;
     height: 1.625rem;
     padding-bottom: 2rem;
-    top: -2px;
+    top: -0.125rem;
     left: 0px;
   }
 }
@@ -1607,7 +1607,7 @@ body {
 .option__item:nth-child(2) {
   position: absolute;
   color: #2b2b2b;
-  width: 5px;
+  width: 0.3125rem;
 }
 
 .account--message {
