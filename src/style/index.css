@@ -791,12 +791,12 @@ body {
   }
   .content__posters {
     display: flex;
+    max-width: 120rem;
     gap: 1rem;
   }
   .content__link {
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: auto;
     width: clamp(140px, 21vw, 280px);
   }
@@ -1731,7 +1731,7 @@ body {
 }
 .find__id__user__email {
   background: #212121;
-  color: #565656;
+  color: #ffffff;
   font-family: Pretendard;
   border: none;
   border-radius: 0.25rem;
@@ -1904,6 +1904,11 @@ body {
   }
 }
 .find__identity__btn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
   background: #e1e1e1;
   font-family: Pretendard;
   font-weight: 600;

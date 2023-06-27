@@ -7,9 +7,10 @@
     <title>아이디 찾기</title>
   </head>
   <body>
-    <header class="header">
-      <h1 class="header__title a11yHidden">티빙</h1>
-      <img src="../images/tving-logo-icon.png" alt="티빙" class="header__logo" />
+    <header class="Header">
+      <h1 class="header__logo">
+        <a href="/" class="header__name"><img src="../images/tving-logo-icon.png" alt="" /></a>
+      </h1>
     </header>
 
     <div class="find__id--container">
@@ -40,13 +41,13 @@
           <dt class="find__id__identity__dt">본인인증으로 찾기</dt>
           <dd class="find__id__identity__dd">이미 본인인증이 완료된 계정에 한하여 아이디 찾기가 가능합니다.</dd>
         </dl>
-        <button type="submit" class="find__identity__btn">본인인증하기</button>
+        <div class="find__identity__btn"><a href="#">본인인증하기</a></div>
       </section>
     </div>
 
     <section class="footer">
       <div class="headContainer"></div>
-      <ul class="menu">
+      <ul class="footer__menu">
         <li class="menu__item"><a href="/" class="menu__link">고객센터</a></li>
         <li class="menu__item"><a href="/" class="menu__link">이용약관</a></li>
         <li class="menu__item"><a href="/" class="menu__link">개인정보처리방침</a></li>
