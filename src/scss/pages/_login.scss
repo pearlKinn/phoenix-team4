@@ -82,7 +82,7 @@
   // 로그인 버튼
   &__btn {
     background: $red-1;
-    max-width: rem(732px);
+    width: rem(732px);
     height: rem(86px);
     color: $white;
     font-size: rem(28.43px);
@@ -144,6 +144,7 @@
 
   &__checkbox {
     position: absolute;
+    left: 0px;
     width: rem(12.308px);
     height: rem(12.308px);
     appearance: none;
@@ -152,6 +153,8 @@
       width: rem(26px);
       height: rem(26px);
       padding-bottom: rem(32px);
+      top: -2px;
+      left: 0px;
     }
   }
 
@@ -177,7 +180,7 @@
     height: rem(26px);
   }
 }
-// 사이즈 조정 필요
+
 .login--state__checkbox:checked + .login--state__label .icon--check {
   background: url(../../images/checked.svg) 0 0/100%;
 }
@@ -212,6 +215,7 @@
 .option__item:nth-child(2) {
   position: absolute;
   color: $gray-800;
+  width: 5px;
 }
 
 .account--message {
