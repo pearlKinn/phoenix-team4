@@ -1348,9 +1348,23 @@ body {
 }
 .only__title {
   color: #ffffff;
-  font-size: clamp(12px, 1.9vw, 28px);
   font-weight: 700;
   margin-bottom: 0.75rem;
+}
+@media (max-width: 480px) {
+  .only__title {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .only__title {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .only__title {
+    font-size: 1.75rem;
+  }
 }
 .only__list {
   display: grid;
@@ -2097,6 +2111,7 @@ body {
   color: #565656;
   border: 1px solid #212121;
   margin-bottom: 36px;
+  color: white;
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .email__input {
