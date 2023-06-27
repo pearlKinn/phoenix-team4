@@ -10,15 +10,15 @@
     color: $white;
     @include desktop {
       width: rem(732px);
-      padding-top: rem(40px);
+      margin-top: rem(40px);
     }
     @include tablet {
       width: rem(416px);
-      padding-top: rem(26px);
+      margin-top: rem(84px);
     }
     @include mobile {
       width: rem(288px);
-      padding-top: rem(18px);
+      margin-top: rem(44px);
     }
   }
   &__id__title__wrapper {
