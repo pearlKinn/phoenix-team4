@@ -592,22 +592,6 @@ legend {
   justify-content: space-between;
   align-items: stretch;
   gap: 0rem;
-  border-bottom: 1px solid #2b2b2b;
-}
-@media (max-width: 480px) {
-  .headContainer {
-    padding-bottom: 0.75rem;
-  }
-}
-@media (min-width: 481px) and (max-width: 767px) {
-  .headContainer {
-    padding-bottom: 1rem;
-  }
-}
-@media (min-width: 768px) {
-  .headContainer {
-    padding-bottom: 1.6875rem;
-  }
 }
 
 .notice {
@@ -653,15 +637,7 @@ legend {
   justify-content: flex-start;
   align-items: stretch;
   gap: 1.25rem;
-}
-@media (min-width: 768px) {
-  .menu {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    gap: 2.25rem;
-  }
+  border-top: 1px solid #2b2b2b;
 }
 @media (max-width: 480px) {
   .menu {
@@ -672,16 +648,24 @@ legend {
     gap: 0rem;
     line-height: 1.6;
     margin-top: 0.75rem;
+    padding-top: 0.75rem;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .menu {
     margin-top: 1rem;
+    padding-top: 1rem;
   }
 }
 @media (min-width: 768px) {
   .menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 2.25rem;
     margin-top: 1.6875rem;
+    padding-top: 1.6875rem;
   }
 }
 
