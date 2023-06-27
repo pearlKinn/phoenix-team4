@@ -23,19 +23,6 @@
 
 .headContainer {
   @include flexbox($justify: space-between);
-  border-bottom: 1px solid $gray-800;
-
-  @include mobile {
-    padding-bottom: rem(12px);
-  }
-
-  @include tablet {
-    padding-bottom: rem(16px);
-  }
-
-  @include desktop {
-    padding-bottom: rem(27px);
-  }
 }
 
 .notice {
@@ -69,23 +56,24 @@
 
 .menu {
   @include flexbox($gap: 20px);
-
-  @include desktop {
-    @include flexbox($gap: 36px);
-  }
+  border-top: 1px solid $gray-800;
 
   @include mobile {
     @include flexbox(column);
     line-height: 1.6;
     margin-top: rem(12px);
+    padding-top: rem(12px);
   }
 
   @include tablet {
     margin-top: rem(16px);
+    padding-top: rem(16px);
   }
 
   @include desktop {
+    @include flexbox($gap: 36px);
     margin-top: rem(27px);
+    padding-top: rem(27px);
   }
 }
 
