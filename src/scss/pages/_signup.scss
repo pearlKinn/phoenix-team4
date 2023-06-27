@@ -3,18 +3,16 @@
 @use "../layout/footer";
 @use "../utils" as *;
 
-.bgColor {
-  background: #000;
-}
-
 .signup {
   color: $gray-500;
   @include mobile {
     @include containerMax(288px);
+    margin-top: rem(66px);
   }
 
   @include tablet {
     @include containerMax(416px);
+    margin-top: rem(84px);
   }
 
   @include desktop {
@@ -41,18 +39,20 @@
     color: $white;
     font-weight: 700;
     text-align: center;
-    margin-bottom: rem(28px);
 
     @include mobile {
       font-size: rem(16px);
+      margin-bottom: rem(8px);
     }
 
     @include tablet {
       font-size: rem(28px);
+      margin-bottom: rem(16px);
     }
 
     @include desktop {
       font-size: rem(38px);
+      margin-bottom: rem(28px);
     }
   }
 
@@ -60,7 +60,7 @@
     color: $gray-400;
     font-weight: 600;
     text-align: center;
-    margin-bottom: rem(60px);
+    margin-bottom: rem(24px);
 
     @include mobile {
       font-size: rem(12px);
@@ -71,6 +71,7 @@
     }
 
     @include desktop {
+      margin-bottom: rem(60px);
       font-size: rem(28px);
     }
   }
@@ -81,7 +82,7 @@
     border-radius: 4px;
     background: $dark-bg-2;
     padding-left: rem(16px);
-    color: $gray-600;
+    color: $white;
 
     @include mobile {
       height: rem(46px);
