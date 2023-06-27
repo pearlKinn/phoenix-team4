@@ -7,7 +7,7 @@ body {
 @include desktop {
   .content {
     &__wrapper {
-      padding-left: rem(70px);
+      margin-left: rem(70px);
     }
     &__wrapper h2 {
       font-size: clamp(12px, 1.9vw, 28px);
@@ -18,8 +18,6 @@ body {
     }
     &__posters {
       display: flex;
-      overflow: hidden;
-      gap: rem(16px);
     }
     &__link {
       display: flex;

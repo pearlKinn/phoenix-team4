@@ -5,10 +5,27 @@
   color: $white;
   width: 100%;
   padding-left: rem(70px);
+
+  @include mobile {
+  padding-left: rem(8px);
+  }
+
+  @include tablet {
+    padding-left: rem(40px);
+  }
   &__title {
     font-size: 28.43px;
     font-weight: 700;
     @include marginY(12px);
+
+    @include mobile {
+    font-size: rem(12px);
+    font-weight: 600;
+    }
+
+    @include tablet {
+      font-size: rem(16px);
+    }
   }
 
   &__program {
@@ -53,7 +70,15 @@
     @include flexbox($gap: 5px);
     min-height: rem(50px);
   }
+  &__rank {
+    @include mobile {
+      max-width: rem(29px);
+    }
 
+    @include tablet {
+      max-width: rem(29px);
+    }
+  }
   &__info {
     position: relative;
     bottom: rem(-20px);
@@ -61,6 +86,13 @@
     color: $gray-200;
     @include textOver;
 
+    @include mobile {
+     bottom: rem(-5px);
+    }
+
+    @include tablet {
+      bottom: rem(-10px);
+    }
     @include desktop {
       font-size: rem(20px);
       font-weight: 600;
@@ -83,6 +115,10 @@
   &__list {
     @include flexbox($gap: 16px);
     height: 100%;
+    
+    @include desktop {
+    padding-bottom: rem(36px);
+    }
   }
 
   &__item {
@@ -107,12 +143,34 @@
   }
 
   &__infoWrapper {
+    position: relative;
     @include flexbox($gap: 12px);
     min-height: 50px;
+
+    @include tablet {
+      bottom: 20px;
+    }
   }
+  
+  &__rank {
+    @include mobile {
+      max-width: rem(30px);
+      align-self: flex-start;
+    }
+
+    @include tablet {
+      max-width: rem(30px);
+    }
+  }
+
   &__infoContainer {
     @include flexbox($direction: column, $gap: 2px);
     overflow: hidden;
+
+    @include tablet {
+      position: relative;
+      top: 10px;
+    }
   }
   &__title {
     color: $gray-200;
