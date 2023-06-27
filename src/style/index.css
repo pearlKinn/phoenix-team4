@@ -618,6 +618,11 @@ legend {
     display: none;
   }
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  .shortcut {
+    display: none;
+  }
+}
 .shortcut__divider {
   color: #6b6b6b;
   border-left: 1px solid #6b6b6b;
@@ -631,16 +636,17 @@ legend {
   }
 }
 
-.menu {
+.footer__menu {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 1.25rem;
+  gap: 0rem;
+  gap: 1vw;
   border-top: 1px solid #2b2b2b;
 }
 @media (max-width: 480px) {
-  .menu {
+  .footer__menu {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -652,13 +658,13 @@ legend {
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  .menu {
+  .footer__menu {
     margin-top: 1rem;
     padding-top: 1rem;
   }
 }
 @media (min-width: 768px) {
-  .menu {
+  .footer__menu {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
