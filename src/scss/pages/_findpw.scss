@@ -2,29 +2,6 @@
 @use "../layout/header";
 @use "../layout/footer";
 
-// 헤더 부분
-
-.Header {
-
-  @include desktop {
-  @include paddingX(70px);
-  height: 100px;
-  margin-top: 19px;
-  }
-
-  @include tablet {
-  @include paddingX(40px);
-  height: 56px;
-  margin-top: 16px;
-  }
-
-  @include mobile {
-  @include paddingX(16px);
-  height: 38px;
-  margin-top: 12px;  
-  }
-}
-
 
 // section부분
 
