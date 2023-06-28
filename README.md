@@ -14,7 +14,7 @@
 <br>
 [회원가입 주소](https://team4-phoenix.netlify.app/views/signup.html)
 
-![Alt text](b0711000c2a3a392.gif)
+![b0711000c2a3a392](https://github.com/phoenix-team4/phoenix-team4/assets/125878245/5da3c50c-d756-43cf-be44-e325bf4f5838)
 
 <br>
 
@@ -32,8 +32,9 @@
 
 ## 기술 스택 🔨
 
-![Alt text](image.png)
-![Alt text](image-1.png)
+![image](https://github.com/phoenix-team4/phoenix-team4/assets/125878245/6efad58f-ce0d-4fc0-8d4d-eb9dab0e2fea)
+
+![image-1](https://github.com/phoenix-team4/phoenix-team4/assets/125878245/c9d665a9-d02a-4d4b-b52a-5148d0971ec8)
 
 <br>
 
@@ -137,11 +138,11 @@ html 문법을 잘 준수하기 위해 validator w3 에서 유효성 검사를 �
 
 ## 데스크탑
 
-![Alt text](image-5.png)
+![](https://velog.velcdn.com/images/pearlx_x/post/482b7b2f-4ea1-4f76-b126-64895626aa1f/image.png)
 
 ## 모바일
 
-![Alt text](performance.png)
+![performance](https://github.com/phoenix-team4/phoenix-team4/assets/125878245/c7a2930a-c44b-461a-9196-736c3e0f213c)
 
 <br>
 <br>
@@ -152,7 +153,7 @@ html 문법을 잘 준수하기 위해 validator w3 에서 유효성 검사를 �
 
 # 메인페이지
 
-![Alt text](image-2.png)
+![](https://velog.velcdn.com/images/pearlx_x/post/10a7f9aa-0e8e-41d7-bc81-16075305657e/image.png)
 
 <br>
 <br>
@@ -160,26 +161,26 @@ html 문법을 잘 준수하기 위해 validator w3 에서 유효성 검사를 �
 # 크로스 브라우징
 
 Chrome, Firefox, Safari, Edge 모던 브라우저 환경에 맞춰 동작 가능합니다.
-![Alt text](image-4.png)
+![image-4](https://github.com/phoenix-team4/phoenix-team4/assets/125878245/26279275-9b27-4c2b-b9b7-3c8a6973aaa6)
 
 ## 크롬
 
-![Alt text](mainpage-chrome.png)
+![chrome](https://velog.velcdn.com/images/pearlx_x/post/10a7f9aa-0e8e-41d7-bc81-16075305657e/image.png)
 
 <br>
 
 ## 엣지
 
-![Alt text](mainpage-edge.png)
+![mainpage-edge](https://github.com/phoenix-team4/phoenix-team4/assets/125878245/9afad933-94f1-4cf7-9672-a8ca92bf12a7)
 
 <br>
 
 ## 사파리
 
-![Alt text](mainpage-safari.png)
+![mainpage-safari](https://github.com/phoenix-team4/phoenix-team4/assets/125878245/f3732b09-7cba-4e4f-9477-6566df4c4910)
 
 <br>
 
 ## 파이어폭스
 
-![Alt text](mainpage-firefox.png)
+![mainpage-firefox](https://github.com/phoenix-team4/phoenix-team4/assets/125878245/23737b1e-b48a-4478-af67-a7cb10fbf406)
