@@ -147,11 +147,13 @@
   @at-root .checkAll {
     &:checked + label {
       background: url(../images/signup/checked.svg) 0 50%/16px no-repeat;
+      color: $white;
     }
 
     @include desktop {
       &:checked + label {
         background: url(../images/signup/checked.svg) no-repeat;
+        color: $white;
       }
     }
 
@@ -172,11 +174,13 @@
   @at-root .check {
     &:checked + label {
       background: url(../images/signup/checked-no-fill.svg) 0 50%/16px no-repeat;
+      color: $white;
     }
 
     @include desktop {
       &:checked + label {
         background: url(../images/signup/checked-no-fill.svg) no-repeat;
+        color: $white;
       }
     }
 

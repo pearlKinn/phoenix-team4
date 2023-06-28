@@ -2022,6 +2022,31 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .Header {
+    padding-left: 4.375rem;
+    padding-right: 4.375rem;
+    height: 100px;
+    margin-top: 19px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .Header {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    height: 56px;
+    margin-top: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .Header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 38px;
+    margin-top: 12px;
+  }
+}
+
 .find {
   color: #ffffff;
   display: flex;
@@ -2313,10 +2338,12 @@ body {
 
 .checkAll:checked + label {
   background: url(../images/signup/checked.svg) 0 50%/16px no-repeat;
+  color: #ffffff;
 }
 @media (min-width: 768px) {
   .checkAll:checked + label {
     background: url(../images/signup/checked.svg) no-repeat;
+    color: #ffffff;
   }
 }
 .checkAllContainer {
@@ -2336,10 +2363,12 @@ body {
 
 .check:checked + label {
   background: url(../images/signup/checked-no-fill.svg) 0 50%/16px no-repeat;
+  color: #ffffff;
 }
 @media (min-width: 768px) {
   .check:checked + label {
     background: url(../images/signup/checked-no-fill.svg) no-repeat;
+    color: #ffffff;
   }
 }
 .checkList {
