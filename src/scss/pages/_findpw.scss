@@ -1,0 +1,154 @@
+@use "./../utils/" as *;
+@use "../layout/header";
+@use "../layout/footer";
+
+
+//  헤더 부분
+
+.Header {
+
+  @include desktop {
+  @include paddingX(70px);
+  height: 100px;
+  margin-top: 19px;
+  }
+
+  @include tablet {
+  @include paddingX(40px);
+  height: 56px;
+  margin-top: 16px;
+  }
+
+  @include mobile {
+  @include paddingX(16px);
+  height: 38px;
+  margin-top: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+// section부분
+
+.find {
+  color: $white;
+  @include flexbox($direction:column, $items:center);
+
+  &__title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 140%;
+    padding-bottom: 60px;
+    
+  @include tablet {
+    font-size: 28px;
+    padding-bottom: 24px;
+    margin-top: 84px;
+  }
+
+  @include mobile {
+    font-size: 16px;
+    padding-bottom: 28px;  
+    margin-top: 44px;
+  }
+  }
+
+&__box {
+  @include flexbox($direction:column, $items:center);
+  @include autoMargin;
+
+  @include desktop {
+  width: 732px;
+  }
+
+  @include tablet {
+  width: 416px;  
+  }
+
+  @include mobile {
+  width: 288px;
+  }
+}
+
+  &__enter {
+    color: $gray-400;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 150%;
+    padding-bottom: 24px;
+
+    @include tablet {
+      width: 416px;
+      font-size: 16px;
+      padding-bottom: 16px;  
+    }
+
+    @include mobile {
+      width: 288px;
+      font-size: 12px;
+      padding-bottom: 16px;
+    }
+  }
+
+  &__button {
+  width: 732px;
+  height: 96px;
+  border-radius: 4px;
+  background: $gray-700;
+  color: $gray-400;
+  border: 1px solid $gray-700;
+
+  @include tablet {
+  width: 416px;
+  height: 50px;
+  }
+
+  @include mobile {
+  width: 288px;
+  height: 42px;   
+  }
+  }
+}
+
+.email__input {
+  width: 732px;
+  height: 96px;
+  padding: 0px 454px 0px 24px;
+  border-radius: 4px;
+  background: $dark-bg-2;
+  color: $gray-600;
+  border: 1px solid $dark-bg-2;
+  margin-bottom: 36px;
+  color: white;
+
+  @include tablet {
+  width: 416px;
+  height: 54px;
+  padding: 0px 20px 0px 16px;
+  margin-bottom: 24px;  
+  }
+
+  @include mobile {
+  width: 288px;
+  height: 46px;
+  padding: 0px 20px 0px 16px;
+  margin-bottom: 16px;
+  }
+}
+
+
+
+
+
+
+
+
+

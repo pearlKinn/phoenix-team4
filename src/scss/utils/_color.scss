@@ -1,1 +1,23 @@
-// color.scss
+//  기본 색상 --------------------------------------------------------- /
+$white: #ffffff;
+$black: #000000;
+$red-1: #ff002f;
+$red-2: #ff305b;
+$gray-100: #e1e1e1;
+$gray-200: #c4c4c4;
+$gray-300: #a6a6a6;
+$gray-400: #898989;
+$gray-500: #6b6b6b;
+$gray-600: #565656;
+$gray-700: #404040;
+$gray-800: #2b2b2b;
+$gray-900: #151515;
+$dark-bg-1: #191919;
+$dark-bg-2: #212121;
+
+// 콘텐츠 별 색상 변수
+$base-bg: $black; // body 기본 배경 색상
+$base-text: $gray-200; // body 기본 글자 색상
+
+$primary-color: $red-1;
+$secondary-color: $red-2;
