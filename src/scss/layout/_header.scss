@@ -133,6 +133,37 @@
       width: 18px;
     }
   }
+
+  &__img {
+    position: relative;
+    z-index: -1;
+  }
+
+  &__more {
+  position: absolute;
+  border-radius: 4px;
+  border: 1px solid $gray-300;
+  background: none;
+  color: white;
+  padding: 20px 0px;
+  text-align: center;
+
+  @include desktop{
+    top: 75%;
+    right: rem(70px);
+    padding: rem(22px) rem(64px);
+  }
+  @include tablet{
+    top: 75%;
+    right: rem(40px);
+    padding: rem(12.5px) rem(38px);
+   }
+  @include mobile{
+    top: 70%;
+    padding: rem(4px) rem(6px);
+    right: rem(12px);
+   }
+  }
 }
 
 .menu__text__item {
@@ -150,3 +181,4 @@
 .menu__box__item {
   width: 100%;
 }
+
