@@ -141,14 +141,14 @@ html 문법을 잘 준수하기 위해 validator w3 에서 유효성 검사를 �
 
 ## 모바일
 
-![Alt text](<스크린샷 2023-06-28 오후 3.04.29.png>)
+![Alt text](performance.png)
 
 <br>
 <br>
 
 # 반응형 구현
 
-<!-- ![Alt text](response.gif) -->
+![Alt text](response-1.gif)
 
 # 메인페이지
 
