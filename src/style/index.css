@@ -901,6 +901,7 @@ body {
   }
   .quick__red {
     position: absolute;
+    white-space: nowrap;
     top: 5px;
     left: 5px;
     background-color: #c73e4e;
