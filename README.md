@@ -4,7 +4,17 @@
 
 ## 배포 주소 📇
 
-https://team4-phoenix.netlify.app/
+[메인페이지 주소](https://team4-phoenix.netlify.app/)
+<br>
+[로그인 주소](https://team4-phoenix.netlify.app/views/login.html)
+<br>
+[아이디 찾기 주소](https://team4-phoenix.netlify.app/views/find-id.html)
+<br>
+[비밀번호 찾기 주소](https://team4-phoenix.netlify.app/views/findpw.html)
+<br>
+[회원가입 주소](https://team4-phoenix.netlify.app/views/signup.html)
+
+![Alt text](b0711000c2a3a392.gif)
 
 <br>
 
@@ -29,7 +39,7 @@ https://team4-phoenix.netlify.app/
 
 ## 주제 📝
 
-티빙 UI 클론 코딩
+티빙 메인페이지 모바일, 태블릿, 데스크탑 반응형으로 만들기
 
 <br>
 
@@ -96,132 +106,80 @@ keyword 이름
 
 <br/>
 
-# 메인페이지
+# 프로젝트를 끝낸 소감
 
-## 크롬
-
-![mainpage-chrome](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/2908099f-3e80-4d7f-97ac-b716ff8e52ca)
-
-## 엣지
-
-![mainpage-edge](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/6393581b-ca41-4641-8c19-131eda835065)
-
-## 파이어폭스
-
-![mainpage-firefox](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/4f1b4021-31bc-4439-a60a-b934f99775df)
-
-## 사파리
-
-![mainpage-safari](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/8507f9b3-bef3-47cc-a7e5-411a49e1dd84)
+- 김재희: 처음에는 어렵고 막막해보였는데 진행하면서 많이 배우고 협업하는게 재미있었다.
+- 김진주: 수업을 듣기 전 프로젝트와 비교했을 때 많이 성장한게 느껴져서 뿌듯했다.
+- 전선용: 처음하는 협업에서 즐거움과 성장을 느껴 매우 의미있는 프로젝트였다.
+- 차지훈: 짧은 기간 반응형과 시멘틱마크업까지 하는 프로젝트를 해서 밀도 높은 경험이 된 것 같다.
 
 <br>
-<br>
 
-# 로그인 페이지
+# 검색 엔진 최적화
 
-## 데스크탑
-
-![login-desktop](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/919a3705-654d-4197-8172-6534dca6efa4)
-
-## 태블릿
-
-![login-tablet](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/97313eb1-1a38-4081-9204-235b4f9018fd)
-
-## 모바일
-
-![login-mobile](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/f3b74725-c3b3-4999-b891-e9b3d029f616)
-
-<br>
-<br>
-
-# 아이디찾기 페이지
-
-## 데스크탑
-
-![findid-desktop](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/d963304d-01a7-406b-988f-6a520026d187)
-
-## 태블릿
-
-![findid-tablet](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/ac8f669f-6508-419a-9483-e7d3b5e0f84e)
-
-## 모바일
-
-![findid-mobile](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/81b2fb4a-7b7c-4e81-bb47-cfe484c72327)
-
-<br>
-<br>
-
-# 비밀번호찾기 페이지
-
-## 데스크탑
-
-![findpw-desktop](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/c3b28c50-5a53-4a3e-bdfc-d9e05a67b1f7)
-
-## 태블릿
-
-![findpw-tablet](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/e5918e2e-1a0f-44f0-81ee-7a391cefc8a1)
-
-## 모바일
-
-![findpw-mobile](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/85cd676d-c84d-49af-bdc5-291a153e4539)
-<br>
-<br>
-
-# 회원가입 페이지
-
-## 데스크탑
-
-![signup-desktop](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/f8c00235-ab3c-4f74-8bad-4b5f8d185adc)
-
-## 태블릿
-
-![signup-tablet](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/4b747492-58e3-4e5f-aa35-f640904051f8)
-
-## 모바일
-
-![signup-mobile](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/addf3754-7eff-4efc-941e-0ad48a7099c9)
-
-<br>
-<br>
-
-# 오픈 그래프
+검색엔진 최적화를 위해 div를 최소화하고 ul태그로 리스트를 만듬, header, section, footer, form, fieldset 등 시맨틱태그를 사용하였습니다.
 
 ![opengraph](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/0cc8ea95-2f6d-4a8b-b506-c23cbabb0c5b)
 
 <br>
 <br>
 
+# Html 유효성 검사
+
+html 문법을 잘 준수하기 위해 validator w3 에서 유효성 검사를 했고 에러 없이 작업 하였습니다.
+
+[html 유효성 검사 링크](https://validator.w3.org/nu/?doc=https://team4-phoenix.netlify.app/)
+
+<br>
+<br>
+
 # 성능 검사
 
-## 티빙 (데스크탑)
+## 데스크탑
 
-<img width="1025" alt="performance-desktop" src="https://github.com/phoenix-team4/phoenix-team4/assets/121213522/d4de311a-54cd-49bd-87ed-131f96b2341f">
+![Alt text](image-5.png)
 
-## 티빙 (모바일)
+## 모바일
 
-![performance-mobile](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/9c1eb7a8-a3f9-4d9f-afab-07f98d74c2b8)
-
-## 클론버전 (데스크탑)
-
-![performance-tiving-desktop](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/f676924d-2257-49a0-841a-7daab622741b)
-
-## 클론버전 (모바일)
-
-![performance-tiving-mobile](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/4467d141-e53e-40c6-9a72-7bd706d34728)
+![Alt text](<스크린샷 2023-06-28 오후 3.04.29.png>)
 
 <br>
 <br>
 
-# 유효성 검사
+# 반응형 구현
 
-https://validator.w3.org/nu/?doc=https://team4-phoenix.netlify.app/
+![Alt text](response.gif)
+
+# 메인페이지
+
+![Alt text](image-2.png)
 
 <br>
 <br>
 
-# 프로젝트를 끝낸 소감
+# 크로스 브라우징
 
-- 김재희:
-- 김진주:
-- 전선용:
-- 차지훈:
+Chrome, Firefox, Safari, Edge 모던 브라우저 환경에 맞춰 동작 가능합니다.
+![Alt text](image-4.png)
+
+## 크롬
+
+![Alt text](mainpage-chrome.png)
+
+<br>
+
+## 엣지
+
+![Alt text](mainpage-edge.png)
+
+<br>
+
+## 사파리
+
+![Alt text](mainpage-safari.png)
+
+<br>
+
+## 파이어폭스
+
+![Alt text](mainpage-firefox.png)
