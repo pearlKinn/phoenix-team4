@@ -148,7 +148,7 @@ html 문법을 잘 준수하기 위해 validator w3 에서 유효성 검사를 �
 
 # 반응형 구현
 
-![Alt text](response.gif)
+<!-- ![Alt text](response.gif) -->
 
 # 메인페이지
 
