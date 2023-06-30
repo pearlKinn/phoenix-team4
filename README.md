@@ -165,7 +165,7 @@ Chrome, Firefox, Safari, Edge 모던 브라우저 환경에 맞춰 동작 가능
 
 ## 크롬
 
-![chrome](https://velog.velcdn.com/images/pearlx_x/post/10a7f9aa-0e8e-41d7-bc81-16075305657e/image.png)
+![mainpage-chrome](https://github.com/phoenix-team4/phoenix-team4/assets/121213522/5c51b00d-986c-4ae8-89d3-e7a2a32a055f)
 
 <br>
 
